@@ -1,0 +1,2 @@
+.fallback-image{position:relative}.fallback-image.gradient-version-core picture{background:radial-gradient(circle at 100% 50%,#85e0ce,#e7e1a0)}.fallback-image.gradient-version-developer picture{background:radial-gradient(circle at 100% 50%,#54e9e2,#78a9ff)}.fallback-image picture{position:absolute;top:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-width:100%;min-height:100%}.fallback-image picture img{min-width:100%}
+/*# sourceMappingURL=fallback-image.css.map */

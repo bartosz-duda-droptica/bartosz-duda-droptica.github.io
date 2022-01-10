@@ -1,0 +1,4297 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  
+<!-- Mirrored from here.local/platform/location-based-services/routing-tools by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 11:52:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+<link rel="canonical" href="/platform/location-based-services/routing-tools" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Routing algorithms and location data to help you move people, goods, and services from A to B. Calculate the best routes based on time, distance, or fuel consumption. Learn more about HERE Routing." />
+<meta property="og:site_name" content="HERE" />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="/platform/location-based-services/routing-tools" />
+<meta property="og:title" content="HERE Routing | Location Services | Platform | HERE" />
+<meta property="og:description" content="Advanced routing algorithms and location data to create smooth journeys for fleets, passengers, and businesses. Calculate the best route and provide an accurate ETA. Learn more about HERE Routing." />
+<meta property="og:image" content="/sites/g/files/odxslz166/files/2020-07/Routing-hero_opengraph_1200x630.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="754" />
+<meta property="og:image:height" content="697" />
+<meta property="og:updated_time" content="Mon, 05/03/2021 - 12:39" />
+<meta property="og:image:alt" content="people on bus using HERE Routing on their phones" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Advanced routing algorithms and location data to create smooth journeys for fleets, passengers, and businesses. Calculate the best route and provide an accurate ETA. Learn more about HERE Routing." />
+<meta name="twitter:title" content="HERE Routing | Location Services | Platform | HERE" />
+<meta name="twitter:url" content="/platform/location-based-services/routing-tools" />
+<meta name="twitter:image:alt" content="people on bus using HERE Routing on their phones" />
+<meta name="twitter:image:height" content="636" />
+<meta name="twitter:image:width" content="480" />
+<meta name="twitter:image" content="/sites/g/files/odxslz166/files/2020-07/Routing-hero_twitter_800x800.jpg" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+<link rel="shortcut icon" href="/themes/custom/here_com_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="/platform/location-based-services/routing-tools" />
+<link rel="alternate" hreflang="ja" href="/jp/platform/location-based-services/routing-tools" />
+<link rel="preconnect" href="http://tags.tiqcdn.com/" />
+<link rel="preconnect" href="http://website.webforms-here.com/" />
+<link rel="preconnect" href="http://track.contently.com/" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>HERE Routing | Location Services | Platform | HERE</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/ajax-progress.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/container-inline.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/clearfix.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/details.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/hidden.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/item-list.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/js.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/nowrap.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/position-container.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/progress.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/reset-appearance.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/resize.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/sticky-header.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-counter.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-counters.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-general-info.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tabledrag.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tablesort.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tree-child.module.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/modules/contrib/addtoany/css/addtoany.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/core/modules/layout_discovery/layouts/onecol/onecol.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/style.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/admin-links.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/cta-links.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/main-navigation.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/menu.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/menu-items.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/menu-item-content.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/menu-list-item.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/navigation-category.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/navigation-column.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/navigation-link.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/marketo-success.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/marketo-form.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/marketo-modal.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/lead-generation.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/lead-generation-item.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/card.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/event-info.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/swiper.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-cards.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-cards-tabs-labels.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-cards-molecule.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-card.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-card-ebook.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-card-event.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-card-product.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/flexible-card-text-only.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/related-content.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/related-item.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/resources.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/document-section.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/feature-grid-image.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/feature-card.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/feature-card-image.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/body-content-panel.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/editorial-cards.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/editorial-card.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/media-banner.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/mission-statement.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/hero-banner.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/hero-banner-secondary.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/hero-banner-secondary-and-tertiary.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/announcement-ribbon.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/social.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/branding.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/language-switcher.css?r5hrtp" />
+<link rel="stylesheet" media="all" href="/themes/custom/here_base_theme/dist/footer.css?r5hrtp" />
+
+
+    <style>
+  @font-face {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Light.eot?6e9085d3-a991-4094-850f-1e4b29e5d8b0');
+    src: local('FiraGO Light'), local('FiraGO-Light'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Light.woff2?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff2'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Light.woff?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff');
+  }
+
+  @font-face {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Book.eot?6e9085d3-a991-4094-850f-1e4b29e5d8b0');
+    src: local('FiraGO Book'), local('FiraGO-Book'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Book.woff2?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff2'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Book.woff?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff');
+  }
+
+  @font-face {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Medium.eot?6e9085d3-a991-4094-850f-1e4b29e5d8b0');
+    src: local('FiraGO Medium'), local('FiraGO-Medium'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Medium.woff2?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff2'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Medium.woff?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff');
+  }
+
+  @font-face {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Bold.eot?6e9085d3-a991-4094-850f-1e4b29e5d8b0');
+    src: local('FiraGO Bold'), local('FiraGO-Bold'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Bold.woff2?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff2'),
+    url('/themes/custom/here_base_theme/fonts/firaGo-subset/subset-FiraGO-Bold.woff?6e9085d3-a991-4094-850f-1e4b29e5d8b0') format('woff');
+  }
+</style>
+    
+    
+
+    
+
+    <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+  </head>
+  <body class="path-node page-node-type-product">
+    <a href="#block-here-com-theme-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div  class="region region--admin-links">
+      
+  </div>
+
+
+
+<div  class="region region--navigation-mobile">
+        
+
+<div  id="block-navigationmobileblock" data-block-plugin-id="navigation_mobile_block" class="block block--navigation-mobile-block">
+  
+    
+      
+
+
+<div  class="navigation navigation--mobile navigation--theme-light theme-here-com-theme language-en sticky" role="navigation" aria-label="Mobile navigation">
+  <div class="shared-content-wrapper">
+        <div class="region">
+                <div class="main-menu">
+  
+    
+                    
+        
+<ul  class="menu menu--primary">
+                                                                                          
+                      
+
+  
+  
+
+<li  class="menu-list-item menu-list-item--primary has-flyout">
+      
+
+<a  class="menu-link menu-link--primary first-level has-children" href="/solutions">
+      <span class="link-content"
+                        data-title="Solutions"
+                  >
+      Solutions
+    </span>
+  </a>
+
+          
+<div  class="menu-item-content menu-item-content--columns-2 menu-item-content--flyout-left second-level-links menu_link_content menu-link-contentmain-menu view-mode-default">
+  <div class="menu-item-content__wrapper">
+          
+
+<a  class="link go-back" href="#">
+      <span class="link-content"
+          >
+      Solutions
+    </span>
+  </a>
+
+              
+<div  class="navigation-link overview">
+  <div class="navigation-link__link-wrapper">
+          
+<div  class="link-separated">
+  <span class="link-text" data-title="Overview">Overview</span>
+  <a class="link-only" href="/solutions">
+    <span class="visually-hidden">Overview</span>
+  </a>
+</div>
+                      </div>
+</div>
+        
+<div  class="field field--name-field-navigation-column field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-column navigation-column--large">
+      
+<div  class="field field--name-field-column-label field--type-string has-children second-level">
+    <div class="field__items">
+                  By Use Case
+            </div>
+</div>
+
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions third-level-links">
+    <div class="field__items">
+                  
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Connected Driving">Connected Driving</span>
+  <a target="_self" class="link-only" href="/solutions/automotive">
+    <span class="visually-hidden">Connected Driving</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Fleet Management">Fleet Management</span>
+  <a target="_self" class="link-only" href="/solutions/fleet-management">
+    <span class="visually-hidden">Fleet Management</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Supply Chain">Supply Chain</span>
+  <a target="_self" class="link-only" href="/solutions/supply-chain-optimization">
+    <span class="visually-hidden">Supply Chain</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Urban Mobility">Urban Mobility</span>
+  <a target="_self" class="link-only" href="/solutions/urban-mobility">
+    <span class="visually-hidden">Urban Mobility</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Consumer Engagement">Consumer Engagement</span>
+  <a target="_self" class="link-only" href="/solutions/consumer-engagement">
+    <span class="visually-hidden">Consumer Engagement</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+              
+<div  class="navigation-column navigation-column--large">
+      
+<div  class="field field--name-field-column-label field--type-string has-children second-level">
+    <div class="field__items">
+                  By Industry
+            </div>
+</div>
+
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions third-level-links">
+    <div class="field__items">
+                  
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Automotive">Automotive</span>
+  <a target="_self" class="link-only" href="/solutions/automotive">
+    <span class="visually-hidden">Automotive</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Transportation &amp; Logistics">Transportation &amp; Logistics</span>
+  <a target="_self" class="link-only" href="/solutions/transport-logistics">
+    <span class="visually-hidden">Transportation &amp; Logistics</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Telecommunications">Telecommunications</span>
+  <a target="_self" class="link-only" href="/solutions/telecom-utilities">
+    <span class="visually-hidden">Telecommunications</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Media">Media</span>
+  <a target="_self" class="link-only" href="/solutions/internet-media">
+    <span class="visually-hidden">Media</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Public Sector">Public Sector</span>
+  <a target="_self" class="link-only" href="/solutions/public-sector-infrastructure">
+    <span class="visually-hidden">Public Sector</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Retail">Retail</span>
+  <a target="_self" class="link-only" href="/solutions/mobile-payment-technology">
+    <span class="visually-hidden">Retail</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Insurance">Insurance</span>
+  <a target="_self" class="link-only" href="/solutions/car-insurance">
+    <span class="visually-hidden">Insurance</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+            </div>
+</div>
+
+  </div>
+</div>
+
+      </li>
+                                                                                        
+                      
+
+  
+  
+
+<li  class="menu-list-item menu-list-item--primary has-flyout">
+      
+
+<a  class="menu-link menu-link--primary first-level has-children" href="/platform">
+      <span class="link-content"
+                        data-title="Platform"
+                  >
+      Platform
+    </span>
+  </a>
+
+          
+<div  class="menu-item-content menu-item-content--columns-3 menu-item-content--flyout-left second-level-links menu_link_content menu-link-contentmain-menu view-mode-default">
+  <div class="menu-item-content__wrapper">
+          
+
+<a  class="link go-back" href="#">
+      <span class="link-content"
+          >
+      Platform
+    </span>
+  </a>
+
+              
+<div  class="navigation-link overview">
+  <div class="navigation-link__link-wrapper">
+          
+<div  class="link-separated">
+  <span class="link-text" data-title="Overview">Overview</span>
+  <a class="link-only" href="/platform">
+    <span class="visually-hidden">Overview</span>
+  </a>
+</div>
+                      </div>
+</div>
+        
+<div  class="field field--name-field-navigation-column field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-column navigation-column--large background-enabled">
+      
+<div  class="field field--name-field-column-label field--type-string has-children second-level">
+    <div class="field__items">
+                  Platform Environments
+            </div>
+</div>
+
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions third-level-links">
+    <div class="field__items">
+                  
+<div  class="navigation-link navigation-link--with-description">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="HERE Workspace">HERE Workspace</span>
+  <a target="_self" class="link-only" href="/platform/workspace">
+    <span class="visually-hidden">HERE Workspace</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>Create, develop and scale location-centric data assets and services in one, secure environment.</p></div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link navigation-link--with-description">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="HERE Studio">HERE Studio</span>
+  <a target="_self" class="link-only" href="/platform/studio">
+    <span class="visually-hidden">HERE Studio</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>Edit data in real-time to create maps faster and run large datasets in the cloud that can be viewed instantly.</p></div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link navigation-link--with-description last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="HERE Marketplace">HERE Marketplace</span>
+  <a target="_self" class="link-only" href="/platform/marketplace">
+    <span class="visually-hidden">HERE Marketplace</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>License, exchange or monetize your assets such as data, services, SDKs, algorithms and apps from trusted sources.</p></div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+              
+<div  class="navigation-column navigation-column--large">
+      
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-link navigation-link--with-description">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Automotive">Automotive</span>
+  <a target="_self" class="link-only" href="/platform/automotive-services">
+    <span class="visually-hidden">Automotive</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>End to end solutions for connected vehicles, in-vehicle infotainment and autonomous driving</p></div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link navigation-link--with-description">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Location Services">Location Services</span>
+  <a target="_self" class="link-only" href="/platform/location-based-services">
+    <span class="visually-hidden">Location Services</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>Solve complex location problems from geofencing to custom routing</p></div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link navigation-link--with-description last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Map Content">Map Content</span>
+  <a target="_self" class="link-only" href="/platform/mapping">
+    <span class="visually-hidden">Map Content</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>Industry leading maps - over 900 attributes, powered by millions of data sources</p></div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+              
+<div  class="navigation-column navigation-column--large">
+      
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-link navigation-link--with-description">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Tracking &amp; Positioning">Tracking &amp; Positioning</span>
+  <a target="_self" class="link-only" href="/platform/tracking-positioning-solutions">
+    <span class="visually-hidden">Tracking &amp; Positioning</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>Fast, accurate, global tracking and positioning - any device, indoors, outdoors, online or offline</p>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link navigation-link--with-description">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Traffic">Traffic</span>
+  <a target="_self" class="link-only" href="/platform/traffic-solutions">
+    <span class="visually-hidden">Traffic</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>Map, analyze, predict and react to real time road traffic</p></div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link navigation-link--with-description last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Mobility">Mobility</span>
+  <a target="_self" class="link-only" href="/platform/mobility-solutions">
+    <span class="visually-hidden">Mobility</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+    
+  <div  class="text-long" ><p>Plan for smarter inter-modal journeys and improve your operations</p></div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+            </div>
+</div>
+
+  </div>
+</div>
+
+      </li>
+                                                                                        
+                      
+
+  
+    
+
+<li  class="menu-list-item menu-list-item--primary has-flyout">
+      
+
+<a  class="menu-link menu-link--primary first-level has-children no-link" href="javascript:void(0)">
+      <span class="link-content"
+                        data-title="Partners"
+                  >
+      Partners
+    </span>
+  </a>
+
+          
+<div  class="menu-item-content menu-item-content--with-cta menu-item-content--columns-1 menu-item-content--flyout-left second-level-links menu_link_content menu-link-contentmain-menu view-mode-default">
+  <div class="menu-item-content__wrapper">
+          
+
+<a  class="link go-back" href="#">
+      <span class="link-content"
+          >
+      Partners
+    </span>
+  </a>
+
+            
+<div  class="field field--name-field-navigation-column field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-column navigation-column--medium">
+      
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Strategic Partners">Strategic Partners</span>
+  <a target="" class="link-only" href="/strategic-partners">
+    <span class="visually-hidden">Strategic Partners</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Find a Partner">Find a Partner</span>
+  <a target="" class="link-only" href="/partners/find-partner">
+    <span class="visually-hidden">Find a Partner</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Become a Partner">Become a Partner</span>
+  <a target="" class="link-only" href="/partners/become-partner">
+    <span class="visually-hidden">Become a Partner</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Already a Partner">Already a Partner</span>
+  <a target="" class="link-only" href="/partners/already-partner">
+    <span class="visually-hidden">Already a Partner</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+            </div>
+</div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_blank" rel="nofollow" class="cta cta--tertiary cta--core"
+    href="https://partners.here.com/"
+    aria-label="Call to action button for Sign in to Partner Portal"
+  >
+          <span class="cta__icon">
+        
+<svg role="img" title="cta-icon-tertiary"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-tertiary"></use>
+</svg>
+    </span>
+  
+  
+                    <span class="cta__content">Sign in to Partner Portal</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+</div>
+
+      </li>
+                                                              
+                      
+
+
+  
+
+<li  class="menu-list-item menu-list-item--primary">
+      
+
+<a  class="menu-link menu-link--primary first-level" href="https://developer.here.com/">
+      <span class="link-content"
+                        data-title="Developers"
+                  >
+      Developers
+    </span>
+  </a>
+
+          
+<div  class="menu-item-content menu-item-content--columns-0 menu-item-content--flyout-left second-level-links menu_link_content menu-link-contentmain-menu view-mode-default">
+  <div class="menu-item-content__wrapper">
+            
+  </div>
+</div>
+
+      </li>
+                                                                                        
+                      
+
+  
+    
+
+<li  class="menu-list-item menu-list-item--primary has-flyout">
+      
+
+<a  class="menu-link menu-link--primary first-level has-children no-link" href="javascript:void(0)">
+      <span class="link-content"
+                        data-title="News"
+                  >
+      News
+    </span>
+  </a>
+
+          
+<div  class="menu-item-content menu-item-content--with-cta menu-item-content--columns-1 menu-item-content--flyout-left second-level-links menu_link_content menu-link-contentmain-menu view-mode-default">
+  <div class="menu-item-content__wrapper">
+          
+
+<a  class="link go-back" href="#">
+      <span class="link-content"
+          >
+      News
+    </span>
+  </a>
+
+            
+<div  class="field field--name-field-navigation-column field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-column navigation-column--small">
+      
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Press Releases">Press Releases</span>
+  <a target="_self" class="link-only" href="/company/press-releases">
+    <span class="visually-hidden">Press Releases</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Media Assets">Media Assets</span>
+  <a target="_self" class="link-only" href="/company/media-assets">
+    <span class="visually-hidden">Media Assets</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Events">Events</span>
+  <a target="" class="link-only" href="/events">
+    <span class="visually-hidden">Events</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Contacts">Contacts</span>
+  <a target="_self" class="link-only" href="/company/newsroom/media-and-industry-analyst-contacts">
+    <span class="visually-hidden">Contacts</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+            </div>
+</div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_blank" class="cta cta--tertiary cta--external-link cta--core"
+    href="https://360.here.com/"
+    aria-label="Call to action button for HERE 360 Blog"
+  >
+          <span class="cta__icon">
+        
+<svg role="img" title="cta-icon-external-link"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-external-link"></use>
+</svg>
+    </span>
+  
+  
+                    <span class="cta__content">HERE 360 Blog</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+</div>
+
+      </li>
+                                                                                        
+                      
+
+  
+  
+
+<li  class="menu-list-item menu-list-item--primary has-flyout">
+      
+
+<a  class="menu-link menu-link--primary first-level has-children" href="/company">
+      <span class="link-content"
+                        data-title="Company"
+                  >
+      Company
+    </span>
+  </a>
+
+          
+<div  class="menu-item-content menu-item-content--columns-1 menu-item-content--flyout-left second-level-links menu_link_content menu-link-contentmain-menu view-mode-default">
+  <div class="menu-item-content__wrapper">
+          
+
+<a  class="link go-back" href="#">
+      <span class="link-content"
+          >
+      Company
+    </span>
+  </a>
+
+              
+<div  class="navigation-link overview">
+  <div class="navigation-link__link-wrapper">
+          
+<div  class="link-separated">
+  <span class="link-text" data-title="Overview">Overview</span>
+  <a class="link-only" href="/company">
+    <span class="visually-hidden">Overview</span>
+  </a>
+</div>
+                      </div>
+</div>
+        
+<div  class="field field--name-field-navigation-column field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-column navigation-column--small">
+      
+<div  class="field field--name-field-navigation-link field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="About Us">About Us</span>
+  <a target="_self" class="link-only" href="/company/about-us">
+    <span class="visually-hidden">About Us</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Careers">Careers</span>
+  <a target="_self" class="link-only" href="/careers">
+    <span class="visually-hidden">Careers</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Leadership">Leadership</span>
+  <a target="_self" class="link-only" href="/company/leadership">
+    <span class="visually-hidden">Leadership</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Investors">Investors</span>
+  <a target="_self" class="link-only" href="/company/investors">
+    <span class="visually-hidden">Investors</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+              
+<div  class="navigation-link last">
+  <div class="navigation-link__link-wrapper">
+        
+<div  class="field field--name-field-link field--type-link">
+    <div class="field__items">
+                  
+<div  class="link-separated">
+  <span class="link-text" data-title="Contact Us">Contact Us</span>
+  <a target="_self" class="link-only" href="/contact">
+    <span class="visually-hidden">Contact Us</span>
+  </a>
+</div>
+
+            </div>
+</div>
+
+        </div>
+</div>
+
+            </div>
+</div>
+
+  </div>
+
+            </div>
+</div>
+
+  </div>
+</div>
+
+      </li>
+              </ul>
+  
+
+
+  </div>
+
+          </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+
+<div  class="region region--navigation">
+        
+
+<div  id="block-navigationblock" data-block-plugin-id="navigation_block" class="block block--navigation-block">
+  
+    
+      
+
+
+<div  class="navigation navigation--main navigation--theme-light theme-here-com-theme language-en sticky" role="navigation" aria-label="Navigation">
+  <div class="shared-content-wrapper">
+            <div class="navigation__bottom">
+      <div class="container extended-mobile-gutter">
+        <div class="left-side d-flex align-items-center" role="region">
+                        <div class="branding-block">
+  
+
+<div  class="branding">
+      <div class="branding__logo">
+          <a href="/"><img src="/themes/custom/here_com_theme/logo.svg" alt="Home" /></a>
+      </div>
+      </div>
+
+  </div>
+
+                  </div>
+        <div class="right-side">
+                        <div class="main-menu">
+  <div id="navigation-placeholder-block"></div>
+  </div>
+
+                        <div class="menu-cta-block">
+    
+
+<div  data-block-plugin-id="block_content:47ea63c6-fcf8-4c0e-8642-69f274436633" class="block block--_7ea63c6-fcf8-4c0e-8642-69f274436633">
+  
+    
+      
+<div class="cta-links-wrapper">
+  <div  class="cta-links primary">
+              
+
+
+  <a  data-marketo-id="2227" data-paragraph-id="95221" data-bizible="form_id=2227&amp;form_category=contact-us&amp;cta_id=1_contact-us&amp;detailed_source=here.local%2Fplatform%2Flocation-based-services%2Frouting-tools" class="cta cta--marketo cta--primary cta--width-small cta--core cta--small"
+    href="#"
+    aria-label="Call to action button for Contact us"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Contact us</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+  </div>
+
+                        
+<a  class="hamburger-menu" href="#" aria-label="Open mobile navigation">
+  <span></span>
+</a>
+
+
+                  </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+
+<div class="layout-container">
+
+  
+
+  <main role="main" class="main">
+    <div class="main-content">
+      
+<div  class="region region--content">
+      <div data-drupal-messages-fallback class="hidden"></div>
+  
+
+<div  id="block-here-com-theme-content" data-block-plugin-id="system_main_block" class="block block--system-main-block">
+  
+    
+      
+<article  data-anchor="#here-routing" role="article" class="node node--type-product anchorable">
+
+  
+  
+
+  
+  <div>
+            <div class="layout layout--onecol">
+    <div >
+      
+    </div>
+  </div>
+  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+        
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      
+
+
+<div  data-anchor="#fleet-webinar-announcement-used-on-multiple-pages" role="article" class="announcement-ribbon announcement-ribbon--theme-dark anchorable">
+  
+  
+
+  <div class="container extended-mobile-gutter">
+    <div class="announcement-ribbon__content">
+          <div >
+      
+    
+  <div  class="text-long" ><p>Optimizing last mile delivery: Find out how to maximize delivery and e-commerce opportunities.</p></div>
+
+    
+  <div  class="text-long text-long--mobile" ><p>Join us for our next fleet webinar </p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_self" class="cta cta--inline cta--core"
+    href="https://go.engage.here.com/webinar-optimizing-last-mile-delivery-in-an-on-demand-economy.html?utm_source=hero-ribbon"
+    aria-label="Call to action button for Learn more"
+  >
+      
+  
+                    <span class="cta__content">Learn more</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+      </div>
+
+                  
+
+<a  aria-label="Close ribbon" class="link-only close" href="#">
+                
+<svg role="img" title="close-colorless"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#close-colorless"></use>
+</svg>
+          </a>
+
+            </div>
+</div>
+
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      
+
+
+
+
+  
+<div  data-anchor="#here-routing" role="article" class="hero-banner hero-banner--image-covering-layer--tint-dark hero-banner--secondary hero-banner--media module-theme module-theme-text-dark module-theme-background-light hero-banner-top-theme hero-banner-top-theme-text-dark hero-banner-top-theme-background-light anchorable" >
+  
+  
+
+  <div class="hero-banner__wrapper">
+    <div class="hero-banner__content">
+      <div class="hero-banner__background" ></div>
+      <div class="container extended-mobile-gutter">
+        <div class="row">
+              <div  class="col-12 col-lg-6">
+              
+    <h1  class="heading">
+    HERE Routing
+  </h1>
+
+    
+  <div  class="text-long" ><p>Advanced algorithms that help create connected journeys for fleets, passengers and businesses</p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_self" class="cta cta--primary cta--width-large cta--core"
+    href="https://developer.here.com/sign-up?create=Freemium-Basic&amp;keepState=true&amp;step=account"
+    aria-label="Call to action button for Get started for free"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Get started for free</span>
+            
+  
+  </a>
+
+
+          
+
+
+  <a  data-marketo-id="1811" data-paragraph-id="62211" data-bizible="form_id=1811&amp;form_category=contact-us&amp;cta_id=36161_contact-us&amp;detailed_source=here.local%2Fplatform%2Flocation-based-services%2Frouting-tools" class="cta cta--marketo cta--secondary cta--width-large cta--core"
+    href="#"
+    aria-label="Call to action button for Contact us"
+  >
+      
+      <span class="cta__svg-icon">
+        <span style="width: 16px; height: 16px;" class="inline_svg">
+  <?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g  stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <path d="M15.6486769,0.443199169 L15.6486769,10.7607386 L0.338766953,10.7607386 L0.338766953,0.442652773 L15.6486769,0.443199169 Z M1.63776695,2.57065277 L1.63876695,9.46073855 L14.3486769,9.46073855 L14.347767,2.57965277 L8.00013079,8.02372606 L1.63776695,2.57065277 Z M13.172767,1.74265277 L2.82276695,1.74265277 L7.99986921,6.17967165 L13.172767,1.74265277 Z"   fill-rule="nonzero"></path>
+    </g>
+</svg>
+</span>
+
+
+    </span>
+  
+                    <span class="cta__content">Contact us</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div class="hero-banner__media container extended-mobile-gutter">
+                
+<div  class="field field--name-field-image-or-video field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+  
+
+  <div class="paragraph paragraph--type--image-or-video paragraph--view-mode--image-or-video-image">
+          
+<div  class="field field--name-field-image-or-video-image field--type-image">
+    <div class="field__items">
+                  <div class="responsive-image">
+      <div class="lazy-load-animation">
+      <div class="gradient"></div>
+    </div>
+  
+            <svg  class="xl" width="1140" height="440" xmlns="http://www.w3.org/2000/svg" data-min-width="1440">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="large" width="950" height="368" xmlns="http://www.w3.org/2000/svg" data-min-width="1024">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="medium" width="1023" height="582" xmlns="http://www.w3.org/2000/svg" data-min-width="768">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="small" width="768" height="437" xmlns="http://www.w3.org/2000/svg" data-min-width="480">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="minimal" width="480" height="273" xmlns="http://www.w3.org/2000/svg" data-min-width="479">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+      
+  
+<picture  data-uuid="854b4b33-d61c-4104-b3e1-894fba6defaa" class="picture lazy-load">
+            
+<source
+   type="image/jpeg" media="all and (min-width: 1440px)" data-label="xl" srcset="/sites/default/files/styles/hero_banner_secondary_xl/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=EEEr0w80 1x, /sites/default/files/styles/hero_banner_secondary_xl_retina/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=Ai1k4vNa 2x" class="img"
+              alt="people on bus using HERE Routing on their phones"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 1024px)" data-label="large" srcset="/sites/default/files/styles/hero_banner_secondary_large/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=VBtJ79RP 1x, /sites/default/files/styles/hero_banner_secondary_large_retina/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=y0KCIbcv 2x" class="img"
+              alt="people on bus using HERE Routing on their phones"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 768px)" data-label="medium" srcset="/sites/default/files/styles/hero_banner_secondary_medium/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=pxRJZpdW 1x, /sites/default/files/styles/hero_banner_secondary_medium_retina/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=R1z0dc3N 2x" class="img"
+              alt="people on bus using HERE Routing on their phones"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 480px)" data-label="small" srcset="/sites/default/files/styles/hero_banner_secondary_small/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=9p4aid_c 1x, /sites/default/files/styles/hero_banner_secondary_small_retina/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=pGCPN0os 2x" class="img"
+              alt="people on bus using HERE Routing on their phones"
+      >
+          
+<source
+   type="image/jpeg" media="all and (max-width: 479px)" data-label="minimal" srcset="/sites/default/files/styles/hero_banner_secondary_xs/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=j_qzi1TZ 1x, /sites/default/files/styles/hero_banner_secondary_xs_retina/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=OFtQ6BvQ 2x" class="img"
+              alt="people on bus using HERE Routing on their phones"
+      >
+        
+<img
+   class="img"
+              alt="people on bus using HERE Routing on their phones"
+          data-src="/sites/default/files/styles/hero_banner_secondary_xs/public/2020-06/Routing-hero_2880x960_3.jpg?h=1cb3d5c4&amp;itok=j_qzi1TZ"
+  >
+</picture>
+</div>
+
+            </div>
+</div>
+
+      </div>
+
+            </div>
+</div>
+
+  
+      </div>
+
+        
+    </div>
+
+</div>
+
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--standalone">
+
+
+
+
+
+    
+<div  data-anchor="#simplify-your-route-planning" role="article" class="body-content-panel body-content-panel--right body-content-panel--theme-light body-content-panel--wide anchorable">
+  
+  
+  <div class="body-content-panel__wrapper container extended-mobile-gutter">
+    <div class="row">
+              <div class="body-content-panel__header col-md-4">
+                            
+    <h2  class="heading">
+    Simplify your route planning
+  </h2>
+
+  
+          </div>
+            <div class="body-content-panel__content offset-md-1 col-md-7">
+                  
+    
+  <div  class="text-long text-long--large-body" ><p>With several stops or various modes of transportation, it can be complicated moving people, goods and services from A to B.</p></div>
+
+    
+  <div  class="text-long text-long--regular" ><p>From organizing multi-stop deliveries to planning an efficient truck route, our routing algorithms combine real-time and historical data to help you reach your destination, know your ETA based on actual congestion and incidents and customize routes to suit your business needs.</p>
+
+<p>Whether you're going by bike, train, truck, car (including electric vehicles/EV), on foot or all of them combined, our services help you easily calculate and plan the best route for your journey.</p>
+
+<p>Ensure simple and safer journeys while keeping up with the demands of a fast-moving world.</p></div>
+
+  
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      
+
+
+
+
+<div  data-anchor="#watch-how-freighthub-helps-customers-optimize-their-supply-chain-with-location-data" role="article" class="media-banner media-banner--image-covering-layer--tint-dark media-banner--gradient media-banner--text-shadow media-banner--overlay_video gradient-version-core anchorable">
+  
+  
+
+  <div class="media-banner__wrapper">
+    <div class="media-banner__banner-wrapper">
+      <div class="media-banner__background">
+                  
+<div  class="field field--name-field-image-or-video field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+  
+
+  <div class="paragraph paragraph--type--image-or-video paragraph--view-mode--image-or-video-image">
+          
+<div  class="field field--name-field-image-or-video-image field--type-image">
+    <div class="field__items">
+                  <div class="responsive-image">
+      <div class="lazy-load-animation">
+      <div class="gradient"></div>
+    </div>
+  
+            <svg  class="large" width="1600" height="438" xmlns="http://www.w3.org/2000/svg" data-min-width="1024">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="medium" width="1022" height="398" xmlns="http://www.w3.org/2000/svg" data-min-width="768">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="small" width="766" height="336" xmlns="http://www.w3.org/2000/svg" data-min-width="480">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="minimal" width="464" height="612" xmlns="http://www.w3.org/2000/svg" data-min-width="479">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+      
+  
+<picture  data-uuid="825397b6-1592-4043-8360-c047b4f7bd9a" class="picture lazy-load">
+            
+<source
+   type="image/png" media="all and (min-width: 1024px)" data-label="large" srcset="/sites/default/files/styles/media_banner_banner_image_large/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=97m9QRBh 1x, /sites/default/files/styles/media_banner_banner_image_large_retina/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=fj2YElbA 2x" class="img"
+              alt="Freighthub video"
+      >
+          
+<source
+   type="image/png" media="all and (min-width: 768px)" data-label="medium" srcset="/sites/default/files/styles/media_banner_banner_image_medium/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=CWFGCS8f 1x, /sites/default/files/styles/media_banner_banner_image_medium_retina/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=njRlwJaT 2x" class="img"
+              alt="Freighthub video"
+      >
+          
+<source
+   type="image/png" media="all and (min-width: 480px)" data-label="small" srcset="" data-srcset="/sites/default/files/styles/media_banner_banner_image_small_low_quality/public/2019-10/FreightHub-video_thumbnail_2880x880.png?itok=XKXMGUt3 0q, /sites/default/files/styles/media_banner_banner_image_small/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=pSMK3VA4 1x, /sites/default/files/styles/media_banner_banner_image_small_retina/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=OdCD5ecC 2x" class="img"
+              alt="Freighthub video"
+      >
+          
+<source
+   type="image/png" media="all and (max-width: 479px)" data-label="minimal" srcset="" data-srcset="/sites/default/files/styles/media_banner_banner_image_xs_low_quality/public/2019-10/FreightHub-video_thumbnail_2880x880.png?itok=ivk4wKsf 0q, /sites/default/files/styles/media_banner_banner_image_xs/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=Zgp6PAO4 1x, /sites/default/files/styles/media_banner_banner_image_xs_retina/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=Z2KRmqpY 2x" class="img"
+              alt="Freighthub video"
+      >
+        
+<img
+   class="img"
+              alt="Freighthub video"
+          data-src="/sites/default/files/styles/media_banner_banner_image_xs/public/2019-10/FreightHub-video_thumbnail_2880x880.png?h=966f6c1f&amp;itok=Zgp6PAO4"
+  >
+</picture>
+</div>
+
+            </div>
+</div>
+
+      </div>
+
+            </div>
+</div>
+
+  
+        </div>
+      <div class="media-banner__banner-content-wrapper container extended-mobile-gutter">
+        <div class="media-banner__banner-content-row row">
+          <div class="media-banner__banner-content col-lg-6 col-md-6 col-xs-12">
+                      
+<div  class="field field--name-field-attribute-text field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+
+<div  class="attribute-text attribute-text--core attribute">
+      <span class="attribute-text__label">Built with HERE</span>
+  </div>
+
+
+            </div>
+</div>
+        
+    <h2  class="heading">
+    Watch how FreightHub helps customers optimize their supply chain with location data
+  </h2>
+
+<div  class="field field--name-field-banner-box-or-video field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+
+
+  <a  data-path="/cms/video-with-overlay/591376" class="cta cta--icon cta--play-icon cta--core cta-video-button cta-video--overlay"
+    href="#"
+    aria-label="Call to action button for Play video"
+  >
+          <span class="cta__icon icon-full">
+        
+<svg role="img" title="cta-icon-play-icon"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-play-icon"></use>
+</svg>
+    </span>
+    </span>
+  
+  
+  
+  
+  </a>
+
+
+            </div>
+</div>
+
+  
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="media-banner__banner-box-or-video-wrapper">
+      <div class="media-banner__banner-box-or-video-container container extended-mobile-gutter">
+        <div class="media-banner__banner-box-or-video-row row">
+          <div class="media-banner__banner-box-or-video col-xl-8 col-lg-9 col-xs-12">
+            <div class="background-gradient-wrapper">
+              <div class="background-gradient"></div>
+              <div class="media-banner__banner-box-or-video-content">
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--top">
+
+
+
+<div  data-anchor="#solve-complex-route-problems" role="article" class="editorial-cards editorial-cards--counter editorial-cards--align-left editorial-cards--gradient module-theme module-theme-text-dark module-theme-background-light gradient-version-core anchorable" >
+  
+  
+
+  <div class="container extended-mobile-gutter">
+    <div class="row">
+      <div class="col-lg-5 col-md-8 col-sm-12">
+                          
+    <h2  class="heading">
+    Solve complex route problems
+  </h2>
+
+  
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="editorial-cards__items row">
+                  
+
+
+
+<div  data-anchor="#solve-complex-route-problems-decrease-delays" class="editorial-cards-item editorial-cards-item--short_copy editorial-cards-item--image module-theme module-theme-text-dark module-theme-background-gray col-12 anchorable">
+  <div class="editorial-cards-item__wrapper row">
+
+          <div class="editorial-cards-item__image col-lg-8">
+        <div class="background-gradient-wrapper">
+          <div class="background-gradient"></div>
+              <div >
+      
+<div  class="field field--name-field-image-or-video-single field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+  
+
+  <div class="paragraph paragraph--type--image-or-video paragraph--view-mode--image-or-video-image">
+          
+<div  class="field field--name-field-image-or-video-image field--type-image">
+    <div class="field__items">
+                  <div class="responsive-image">
+      <div class="lazy-load-animation">
+      <div class="gradient"></div>
+    </div>
+  
+            <svg  class="xl" width="750" height="440" xmlns="http://www.w3.org/2000/svg" data-min-width="1440">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="large" width="623" height="366" xmlns="http://www.w3.org/2000/svg" data-min-width="1024">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="medium" width="993" height="583" xmlns="http://www.w3.org/2000/svg" data-min-width="768">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="small" width="737" height="432" xmlns="http://www.w3.org/2000/svg" data-min-width="480">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="minimal" width="449" height="263" xmlns="http://www.w3.org/2000/svg" data-min-width="479">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+      
+  
+<picture  data-uuid="c0af04bb-de40-415a-9bba-5321b3cfe4fd" class="picture lazy-load">
+            
+<source
+   type="image/jpeg" media="all and (min-width: 1440px)" data-label="xl" srcset="/sites/default/files/styles/editorial_cards_xl/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=_V1GYya_ 1x, /sites/default/files/styles/editorial_cards_xl_retina/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=ShlkOchq 2x" class="img"
+              alt="female Black truck driver using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 1024px)" data-label="large" srcset="/sites/default/files/styles/editorial_cards_large/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=G00mwBHZ 1x, /sites/default/files/styles/editorial_cards_large_retina/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=-_oBWn3f 2x" class="img"
+              alt="female Black truck driver using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 768px)" data-label="medium" srcset="/sites/default/files/styles/editorial_cards_medium/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=onNtClsU 1x, /sites/default/files/styles/editorial_cards_medium_retina/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=mli4pcbZ 2x" class="img"
+              alt="female Black truck driver using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 480px)" data-label="small" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_small_low_quality/public/2020-06/Routing-editorial-card-01.jpg?itok=mrmjYkw2 0q, /sites/default/files/styles/editorial_cards_small/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=4EEsYpCX 1x, /sites/default/files/styles/editorial_cards_small_retina/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=QtxaA_Ck 2x" class="img"
+              alt="female Black truck driver using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (max-width: 479px)" data-label="minimal" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_xs_low_quality/public/2020-06/Routing-editorial-card-01.jpg?itok=weSK0r1a 0q, /sites/default/files/styles/editorial_cards_xs/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=MOz_o_O_ 1x, /sites/default/files/styles/editorial_cards_xs_retina/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=bKobGlBQ 2x" class="img"
+              alt="female Black truck driver using HERE Routing"
+      >
+        
+<img
+   class="img"
+              alt="female Black truck driver using HERE Routing"
+          data-src="/sites/default/files/styles/editorial_cards_xs/public/2020-06/Routing-editorial-card-01.jpg?h=b4d509a6&amp;itok=MOz_o_O_"
+  >
+</picture>
+</div>
+
+            </div>
+</div>
+
+      </div>
+
+            </div>
+</div>
+
+  </div>
+
+          </div>
+      </div>
+    
+    <div class="editorial-cards-item__content col-12 col-lg-4">
+      <div class="editorial-cards-item__content-inner" >
+            <div >
+              
+    <h3  class="heading">
+    Decrease delays
+  </h3>
+
+    
+  <div  class="text-long" ><p>Improve driver experience with optimized routes that use vehicle or truck-specific attributes such as legal and physical restrictions. Calculate up to 100 million routes in less than 30 seconds, even with multiple stops. Plan your arrival with a precise ETA, regardless of traffic conditions.</p></div>
+
+  </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+<div  data-anchor="#solve-complex-route-problems-reduce-response-times" class="editorial-cards-item editorial-cards-item--short_copy editorial-cards-item--image module-theme module-theme-text-dark module-theme-background-gray col-12 anchorable">
+  <div class="editorial-cards-item__wrapper row">
+
+          <div class="editorial-cards-item__image col-lg-8">
+        <div class="background-gradient-wrapper">
+          <div class="background-gradient"></div>
+              <div >
+      
+<div  class="field field--name-field-image-or-video-single field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+  
+
+  <div class="paragraph paragraph--type--image-or-video paragraph--view-mode--image-or-video-image">
+          
+<div  class="field field--name-field-image-or-video-image field--type-image">
+    <div class="field__items">
+                  <div class="responsive-image">
+      <div class="lazy-load-animation">
+      <div class="gradient"></div>
+    </div>
+  
+            <svg  class="xl" width="750" height="440" xmlns="http://www.w3.org/2000/svg" data-min-width="1440">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="large" width="623" height="366" xmlns="http://www.w3.org/2000/svg" data-min-width="1024">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="medium" width="993" height="583" xmlns="http://www.w3.org/2000/svg" data-min-width="768">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="small" width="737" height="432" xmlns="http://www.w3.org/2000/svg" data-min-width="480">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="minimal" width="449" height="263" xmlns="http://www.w3.org/2000/svg" data-min-width="479">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+      
+  
+<picture  data-uuid="2994fa14-e971-4b56-b694-ce3fcbb88a36" class="picture lazy-load">
+            
+<source
+   type="image/jpeg" media="all and (min-width: 1440px)" data-label="xl" srcset="/sites/default/files/styles/editorial_cards_xl/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=x2oSdKRC 1x, /sites/default/files/styles/editorial_cards_xl_retina/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=qCUnoJyv 2x" class="img"
+              alt="two young emergency vehicle drivers speaking with dispatch using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 1024px)" data-label="large" srcset="/sites/default/files/styles/editorial_cards_large/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=XowFZAyw 1x, /sites/default/files/styles/editorial_cards_large_retina/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=9GKUjv-G 2x" class="img"
+              alt="two young emergency vehicle drivers speaking with dispatch using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 768px)" data-label="medium" srcset="/sites/default/files/styles/editorial_cards_medium/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=2TYOovzv 1x, /sites/default/files/styles/editorial_cards_medium_retina/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=lcV0vcjL 2x" class="img"
+              alt="two young emergency vehicle drivers speaking with dispatch using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 480px)" data-label="small" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_small_low_quality/public/2020-06/Routing-editorial-card-02.jpg?itok=QQnxCddW 0q, /sites/default/files/styles/editorial_cards_small/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=WccnNIV6 1x, /sites/default/files/styles/editorial_cards_small_retina/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=KeH98u9b 2x" class="img"
+              alt="two young emergency vehicle drivers speaking with dispatch using HERE Routing"
+      >
+          
+<source
+   type="image/jpeg" media="all and (max-width: 479px)" data-label="minimal" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_xs_low_quality/public/2020-06/Routing-editorial-card-02.jpg?itok=v4mfsjco 0q, /sites/default/files/styles/editorial_cards_xs/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=csVTjRDX 1x, /sites/default/files/styles/editorial_cards_xs_retina/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=0gVKc2rG 2x" class="img"
+              alt="two young emergency vehicle drivers speaking with dispatch using HERE Routing"
+      >
+        
+<img
+   class="img"
+              alt="two young emergency vehicle drivers speaking with dispatch using HERE Routing"
+          data-src="/sites/default/files/styles/editorial_cards_xs/public/2020-06/Routing-editorial-card-02.jpg?h=b4d509a6&amp;itok=csVTjRDX"
+  >
+</picture>
+</div>
+
+            </div>
+</div>
+
+      </div>
+
+            </div>
+</div>
+
+  </div>
+
+          </div>
+      </div>
+    
+    <div class="editorial-cards-item__content col-12 col-lg-4">
+      <div class="editorial-cards-item__content-inner" >
+            <div >
+              
+    <h3  class="heading">
+    Reduce response times
+  </h3>
+
+    
+  <div  class="text-long" ><p>Dispatch the best vehicle that's within reach and has the most optimal route to your destination with the fastest response time. Calculate routes based on time, distance or fuel consumption to keep things moving.</p></div>
+
+  </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+<div  data-anchor="#solve-complex-route-problems-optimize-ev-charging-times" class="editorial-cards-item editorial-cards-item--short_copy editorial-cards-item--image module-theme module-theme-text-dark module-theme-background-gray col-12 anchorable">
+  <div class="editorial-cards-item__wrapper row">
+
+          <div class="editorial-cards-item__image col-lg-8">
+        <div class="background-gradient-wrapper">
+          <div class="background-gradient"></div>
+              <div >
+      
+<div  class="field field--name-field-image-or-video-single field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+  
+
+  <div class="paragraph paragraph--type--image-or-video paragraph--view-mode--image-or-video-image">
+          
+<div  class="field field--name-field-image-or-video-image field--type-image">
+    <div class="field__items">
+                  <div class="responsive-image">
+      <div class="lazy-load-animation">
+      <div class="gradient"></div>
+    </div>
+  
+            <svg  class="xl" width="750" height="440" xmlns="http://www.w3.org/2000/svg" data-min-width="1440">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="large" width="623" height="366" xmlns="http://www.w3.org/2000/svg" data-min-width="1024">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="medium" width="993" height="583" xmlns="http://www.w3.org/2000/svg" data-min-width="768">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="small" width="737" height="432" xmlns="http://www.w3.org/2000/svg" data-min-width="480">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="minimal" width="449" height="263" xmlns="http://www.w3.org/2000/svg" data-min-width="479">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+      
+  
+<picture  data-uuid="a981e78f-5c19-4400-8f51-cb7a26a79311" class="picture lazy-load">
+            
+<source
+   type="image/jpeg" media="all and (min-width: 1440px)" data-label="xl" srcset="/sites/default/files/styles/editorial_cards_xl/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=dwnJYkoN 1x, /sites/default/files/styles/editorial_cards_xl_retina/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=wbgyqgze 2x" class="img"
+              alt="Woman Charging her car"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 1024px)" data-label="large" srcset="/sites/default/files/styles/editorial_cards_large/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=PuR-MzXu 1x, /sites/default/files/styles/editorial_cards_large_retina/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=Fd5IGtp9 2x" class="img"
+              alt="Woman Charging her car"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 768px)" data-label="medium" srcset="/sites/default/files/styles/editorial_cards_medium/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=MGkOcgfa 1x, /sites/default/files/styles/editorial_cards_medium_retina/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=nOQmkUgv 2x" class="img"
+              alt="Woman Charging her car"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 480px)" data-label="small" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_small_low_quality/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?itok=piB9xPSS 0q, /sites/default/files/styles/editorial_cards_small/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=xI4eoh6S 1x, /sites/default/files/styles/editorial_cards_small_retina/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=6zfLQMND 2x" class="img"
+              alt="Woman Charging her car"
+      >
+          
+<source
+   type="image/jpeg" media="all and (max-width: 479px)" data-label="minimal" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_xs_low_quality/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?itok=wbGVA1ZM 0q, /sites/default/files/styles/editorial_cards_xs/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=DWogB2tl 1x, /sites/default/files/styles/editorial_cards_xs_retina/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=lN779yla 2x" class="img"
+              alt="Woman Charging her car"
+      >
+        
+<img
+   class="img"
+              alt="Woman Charging her car"
+          data-src="/sites/default/files/styles/editorial_cards_xs/public/2020-12/Connected_Driving-editorial_cards_2_1500x880.jpg?h=5fb86cdf&amp;itok=DWogB2tl"
+  >
+</picture>
+</div>
+
+            </div>
+</div>
+
+      </div>
+
+            </div>
+</div>
+
+  </div>
+
+          </div>
+      </div>
+    
+    <div class="editorial-cards-item__content col-12 col-lg-4">
+      <div class="editorial-cards-item__content-inner" >
+            <div >
+              
+    <h3  class="heading">
+    Optimize EV charging times
+  </h3>
+
+    
+  <div  class="text-long" ><p>Get the fastest route optimized for EV based on driving times, charging duration and station locations, consumption model and charging curve. Lower overall driver anxiety with shorter travel and charging time.</p></div>
+
+  </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+<div  data-anchor="#solve-complex-route-problems-save-on-total-costs" class="editorial-cards-item editorial-cards-item--short_copy editorial-cards-item--image module-theme module-theme-text-dark module-theme-background-gray col-12 anchorable">
+  <div class="editorial-cards-item__wrapper row">
+
+          <div class="editorial-cards-item__image col-lg-8">
+        <div class="background-gradient-wrapper">
+          <div class="background-gradient"></div>
+              <div >
+      
+<div  class="field field--name-field-image-or-video-single field--type-entity-reference-revisions">
+    <div class="field__items">
+                  
+  
+
+  <div class="paragraph paragraph--type--image-or-video paragraph--view-mode--image-or-video-image">
+          
+<div  class="field field--name-field-image-or-video-image field--type-image">
+    <div class="field__items">
+                  <div class="responsive-image">
+      <div class="lazy-load-animation">
+      <div class="gradient"></div>
+    </div>
+  
+            <svg  class="xl" width="750" height="440" xmlns="http://www.w3.org/2000/svg" data-min-width="1440">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="large" width="623" height="366" xmlns="http://www.w3.org/2000/svg" data-min-width="1024">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="medium" width="993" height="583" xmlns="http://www.w3.org/2000/svg" data-min-width="768">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="small" width="737" height="432" xmlns="http://www.w3.org/2000/svg" data-min-width="480">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="minimal" width="449" height="263" xmlns="http://www.w3.org/2000/svg" data-min-width="479">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+      
+  
+<picture  data-uuid="d95815d9-ddff-4cd0-aec9-a3a5df9760e4" class="picture lazy-load">
+            
+<source
+   type="image/jpeg" media="all and (min-width: 1440px)" data-label="xl" srcset="/sites/default/files/styles/editorial_cards_xl/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=xwASF0vO 1x, /sites/default/files/styles/editorial_cards_xl_retina/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=kGtrKJw2 2x" class="img"
+              alt="Lorry on the road"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 1024px)" data-label="large" srcset="/sites/default/files/styles/editorial_cards_large/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=BZrmEqO5 1x, /sites/default/files/styles/editorial_cards_large_retina/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=2EMVzWB0 2x" class="img"
+              alt="Lorry on the road"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 768px)" data-label="medium" srcset="/sites/default/files/styles/editorial_cards_medium/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=pZPhL63K 1x, /sites/default/files/styles/editorial_cards_medium_retina/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=nW2C9f7q 2x" class="img"
+              alt="Lorry on the road"
+      >
+          
+<source
+   type="image/jpeg" media="all and (min-width: 480px)" data-label="small" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_small_low_quality/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?itok=DsQnI-5O 0q, /sites/default/files/styles/editorial_cards_small/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=RxSIqPDG 1x, /sites/default/files/styles/editorial_cards_small_retina/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=My0F6BBk 2x" class="img"
+              alt="Lorry on the road"
+      >
+          
+<source
+   type="image/jpeg" media="all and (max-width: 479px)" data-label="minimal" srcset="" data-srcset="/sites/default/files/styles/editorial_cards_xs_low_quality/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?itok=aq7hO0aj 0q, /sites/default/files/styles/editorial_cards_xs/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=o9DqWZt2 1x, /sites/default/files/styles/editorial_cards_xs_retina/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=Ug1FTa24 2x" class="img"
+              alt="Lorry on the road"
+      >
+        
+<img
+   class="img"
+              alt="Lorry on the road"
+          data-src="/sites/default/files/styles/editorial_cards_xs/public/2020-01/Fleet_Telematics-product_detail-editorial_card_3_1500x880.jpg?h=b4d509a6&amp;itok=o9DqWZt2"
+  >
+</picture>
+</div>
+
+            </div>
+</div>
+
+      </div>
+
+            </div>
+</div>
+
+  </div>
+
+          </div>
+      </div>
+    
+    <div class="editorial-cards-item__content col-12 col-lg-4">
+      <div class="editorial-cards-item__content-inner" >
+            <div >
+              
+    <h3  class="heading">
+    Save on total costs
+  </h3>
+
+    
+  <div  class="text-long" ><p>Make cost-effective decisions and create custom routes for cheaper and shorter journeys. Calculate toll and fuel costs, while factoring in local speed limits, rest stops and desired arrival time.</p></div>
+
+  </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  
+      </div>
+  </div>
+</div>
+</div>
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--standalone">
+
+
+
+
+
+
+<div  data-anchor="#ready-to-get-started" role="article" class="lead-generation lead-generation--items-count-3 lead-generation--left lead-generation--wide module-theme module-theme-text-dark module-theme-background-light anchorable" >
+  
+  
+  <div class="lead-generation__outer-wrapper  container-fluid">
+    <div class="row justify-content-center">
+      <div class="lead-generation__inner-wrapper  col-12" >
+        <div class="row">
+          <div class="lead-generation__background">
+                
+            </div>
+          <div class="lead-generation__content extended-mobile-gutter container">
+            <div class="row">
+              <div class="lead-generation__heading col-12 col-md-4 col-lg-6">
+                            
+    <h2  class="heading">
+    Ready to get started?
+  </h2>
+
+                </div>
+            </div>
+            <div class="row">
+              <div class="lead-generation__columns col-12">
+                <div class="row">
+                        
+
+
+<div  data-anchor="#ready-to-get-started-lets-talk" class="lead-generation-item module-theme module-theme-text-dark module-theme-background-transparent col-12 col-md-4 anchorable"  >
+  <div class="row lead-generation-item__wrapper">
+    <div class="lead-generation-item__background">
+          
+      </div>
+    <div class="lead-generation-item__content col-12">
+                <div  class="lead-generation-item__content__fields_group">
+              
+    <h3  class="heading">
+     Let&#039;s talk 
+  </h3>
+
+    
+  <div  class="text-long" ><p>Create memorable customer experiences with improved route planning.</p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  data-marketo-id="1811" data-paragraph-id="62271" data-bizible="form_id=1811&amp;form_category=contact-us&amp;cta_id=62276_contact-us&amp;detailed_source=here.local%2Fplatform%2Flocation-based-services%2Frouting-tools" class="cta cta--marketo cta--primary cta--width-small cta--core"
+    href="#"
+    aria-label="Call to action button for Contact us"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Contact us</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+  
+
+
+<div  data-anchor="#ready-to-get-started-get-started-today" class="lead-generation-item module-theme module-theme-text-dark module-theme-background-transparent col-12 col-md-4 anchorable"  >
+  <div class="row lead-generation-item__wrapper">
+    <div class="lead-generation-item__background">
+          
+      </div>
+    <div class="lead-generation-item__content col-12">
+                <div  class="lead-generation-item__content__fields_group">
+              
+    <h3  class="heading">
+     Get started today 
+  </h3>
+
+    
+  <div  class="text-long" ><p>Calculate complex multi-stop and intermodal routes.</p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_self" class="cta cta--primary cta--width-medium cta--core"
+    href="https://developer.here.com/sign-up?create=Freemium-Basic&amp;keepState=true&amp;step=account"
+    aria-label="Call to action button for Get Started today"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Get Started today</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+  
+
+
+<div  data-anchor="#ready-to-get-started-need-more-insight" class="lead-generation-item module-theme module-theme-text-dark module-theme-background-transparent col-12 col-md-4 anchorable"  >
+  <div class="row lead-generation-item__wrapper">
+    <div class="lead-generation-item__background">
+          
+      </div>
+    <div class="lead-generation-item__content col-12">
+                <div  class="lead-generation-item__content__fields_group">
+              
+    <h3  class="heading">
+     Need more insight? 
+  </h3>
+
+    
+  <div  class="text-long" ><p>Find out how timely location services can help your fleet.</p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_blank" class="cta cta--primary cta--width-medium cta--core"
+    href="https://go.engage.here.com/here-fleet-ebook-the-true-value-download.html?detailed_source=here.com/en/solutions/use-cases/fleet-utilization"
+    aria-label="Call to action button for Download eBook"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Download eBook</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--standalone">
+
+
+
+
+
+    
+<div  data-anchor="#product-applications" role="article" class="body-content-panel body-content-panel--right body-content-panel--theme-grey body-content-panel--wide anchorable">
+  
+  
+  <div class="body-content-panel__wrapper container extended-mobile-gutter">
+    <div class="row">
+              <div class="body-content-panel__header col-md-4">
+                            
+    <h2  class="heading">
+    Product applications
+  </h2>
+
+  
+          </div>
+            <div class="body-content-panel__content offset-md-1 col-md-7">
+                  
+<div  class="body-content-panel__column-text">
+      
+<div  class="body-content-panel__column-section body-content-panel__column-section--columns-count-2">
+      
+<span  class="short-text short-text--column-title">
+      Use cases
+  </span>
+              
+<div  class="text-long text-long--max-font text-long--aqua-dark">
+      <p><a class="cta cta--inline cta--core" href="/solutions/fleet-management">Fleet Utilization</a></p>
+
+<p><a class="cta cta--inline cta--core" href="/solutions/supply-chain-optimization">Supply Chain Optimization</a></p>
+
+<p><a class="cta cta--inline cta--core" href="/solutions/urban-mobility">Urban Mobility</a></p>
+  </div>
+  </div>
+      
+<div  class="body-content-panel__column-section body-content-panel__column-section--columns-count-2">
+      
+<span  class="short-text short-text--column-title">
+      Industries
+  </span>
+              
+<div  class="text-long text-long--max-font text-long--aqua-dark">
+      <p><a class="cta cta--inline cta--core" href="/solutions/automotive">Automotive</a></p>
+
+<p><a class="cta cta--inline cta--core" href="/solutions/public-sector-infrastructure">Public Sector &amp; Infrastructure</a></p>
+
+<p><a class="cta cta--inline cta--core" href="/solutions/transport-logistics">Transportation &amp; Logistics</a></p>
+
+  </div>
+  </div>
+  </div>
+
+  
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+    </div>
+  </div>
+
+    
+        <div class="layout layout--onecol layout--here-onecol layout--relative layout--theme-dark layout--theme-gradient-version-developer layout--bottom-frame-gradient-version-developer layout--theme-animate">
+        <div class="layout--theme-gradient__gradient-layer"></div>
+        <div  class="layout__region layout__region--content">
+              
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--standalone">
+
+
+<div  data-anchor="#developer-benefits" role="article" class="feature-grid-image feature-grid-image--theme-dark feature-grid-image--left feature-grid-image--feature-card-center anchorable">
+  
+  
+
+  <div class="container extended-mobile-gutter">
+    <div class="row">
+      <div class="feature-grid-image__heading col-12 col-md-8 col-lg-6">
+                    
+    <h2  class="heading">
+    Developer benefits
+  </h2>
+
+        </div>
+    </div>
+    <div class="row">
+      <div class="feature-grid-image__content col-12">
+            
+<div  class="feature-cards row">
+      
+
+
+<div  data-anchor="#developer-benefits-dynamic-etas" class="feature-card-image col-12 col-md anchorable">
+  <div class="feature-card-image__wrapper">
+          <div class="feature-card-image__icon">
+                    <img class="svg_icon"  src="/sites/default/files/2020-04/Developer_Icons_Routing_Dynamic_ETAs (11).svg" alt="dynamic ETAs" width="" height="" />
+
+
+  
+        </div>
+        <div class="feature-card-image__text">
+                        
+    <h3  class="heading">
+    Dynamic ETAs
+  </h3>
+
+    
+  <div  class="text-long" ><p>Get accurate ETAs with routing algorithms that use rich map datasets and dynamically updated information.</p></div>
+
+  
+      </div>
+  </div>
+</div>
+
+      
+
+
+<div  data-anchor="#developer-benefits-advanced-routing" class="feature-card-image col-12 col-md anchorable">
+  <div class="feature-card-image__wrapper">
+          <div class="feature-card-image__icon">
+                    <img class="svg_icon"  src="/sites/default/files/2020-04/Developer_Icons_Routing_Advanced_Routing (11).svg" alt="advanced routing" width="" height="" />
+
+
+  
+        </div>
+        <div class="feature-card-image__text">
+                        
+    <h3  class="heading">
+    Advanced routing
+  </h3>
+
+    
+  <div  class="text-long" ><p>Solve complex use cases with ready-to-use routing algorithms – no coding required.</p></div>
+
+  
+      </div>
+  </div>
+</div>
+
+      
+
+
+<div  data-anchor="#developer-benefits-localized" class="feature-card-image col-12 col-md anchorable">
+  <div class="feature-card-image__wrapper">
+          <div class="feature-card-image__icon">
+                    <img class="svg_icon"  src="/sites/default/files/2020-04/Developer_Icons_Routing_Localized (11).svg" alt="Localized" width="" height="" />
+
+
+  
+        </div>
+        <div class="feature-card-image__text">
+                        
+    <h3  class="heading">
+    Localized
+  </h3>
+
+    
+  <div  class="text-long" ><p>Get routing instructions in 108 languages for different modes of travel: car, truck, foot, bicycle, motorcycle and public transit.</p></div>
+
+  
+      </div>
+  </div>
+</div>
+
+  </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+        </div>
+        <div class="bottom-frame"></div>
+    </div>
+
+    
+        <div class="layout layout--onecol layout--here-onecol layout--relative layout--theme-transparent layout--theme- layout--bottom-frame- layout--theme-animate">
+        <div class="layout--theme-gradient__gradient-layer"></div>
+        <div  class="layout__region layout__region--content">
+              
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--top">
+
+
+
+
+
+
+<section  data-anchor="#resources" class="resources resources--theme-light module-theme-text-dark anchorable">
+  
+  
+
+  <div  class="resources__container container extended-mobile-gutter">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-lg-5">
+            <div  class="resources__header">
+              
+    <h2  class="heading">
+    Resources
+  </h2>
+
+  </div>
+
+        </div>
+    </div>
+        <div  class="resources__content">
+      
+  
+  <div  class="doc-section-container doc-section-container--col-2 doc-section-container--all-tertiary">
+    
+<section  data-anchor="#resources-tech-documentation" class="doc-section anchorable">
+              
+    <h3  class="heading">
+    Tech documentation
+  </h3>
+
+    
+  <div  class="text-long" ><p>Get the docs and code examples you need to get started with HERE Routing.</p></div>
+<div  class="inline-cta-group">
+      
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_self" class="cta cta--inline cta--core"
+    href="https://developer.here.com/documentation/fleet-telematics/dev_guide/index.html"
+    aria-label="Call to action button for REST"
+  >
+      
+  
+                    <span class="cta__content">REST</span>
+            
+  
+  </a>
+
+
+          
+
+
+  <a  target="" class="cta cta--inline cta--core"
+    href="https://developer.here.com/documentation/maps/dev_guide/topics/routing.html"
+    aria-label="Call to action button for JS"
+  >
+      
+  
+                    <span class="cta__content">JS</span>
+            
+  
+  </a>
+
+
+          
+
+
+  <a  target="" class="cta cta--inline cta--core"
+    href="https://developer.here.com/documentation/android-sdk/dev_guide/topics/routing.html#directions"
+    aria-label="Call to action button for Android Lite"
+  >
+      
+  
+                    <span class="cta__content">Android Lite</span>
+            
+  
+  </a>
+
+
+          
+
+
+  <a  target="" class="cta cta--inline cta--core"
+    href="https://developer.here.com/documentation/android-premium/dev_guide/topics/routing.html"
+    aria-label="Call to action button for Android Premium"
+  >
+      
+  
+                    <span class="cta__content">Android Premium</span>
+            
+  
+  </a>
+
+
+          
+
+
+  <a  target="" class="cta cta--inline cta--core"
+    href="https://developer.here.com/documentation/ios-sdk/dev_guide/topics/routing.html#directions"
+    aria-label="Call to action button for iOS Lite"
+  >
+      
+  
+                    <span class="cta__content">iOS Lite</span>
+            
+  
+  </a>
+
+
+          
+
+
+  <a  target="" class="cta cta--inline cta--core"
+    href="https://developer.here.com/documentation/ios-premium/dev_guide/topics/routing.html"
+    aria-label="Call to action button for iOS Premium"
+  >
+      
+  
+                    <span class="cta__content">iOS Premium</span>
+            
+  
+  </a>
+
+
+          
+
+
+  <a  target="" class="cta cta--inline cta--core"
+    href="https://developer.here.com/documentation#routing_and_navigation_section"
+    aria-label="Call to action button for more documentation"
+  >
+      
+  
+                    <span class="cta__content">more documentation</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+  </section>
+
+  </div>
+  
+  <div  class="doc-section-container doc-section-container--col-2 doc-section-container--pdf doc-section-container--all-tertiary">
+    
+<section  data-anchor="#resources-one-pager" class="doc-section anchorable">
+              
+    <h3  class="heading">
+    One-pager
+  </h3>
+
+    
+  <div  class="text-long" ><p>Learn more about the features and capabilities of HERE Routing.</p></div>
+<div  class="cta-group">
+      
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+                
+
+
+  <a  target="_blank" class="cta cta--tertiary cta--download-tertiary cta--core"
+    href="/sites/default/files/2020-08/20200730_CS_PMK_RoutingAPIv8_one-pager.pdf"
+    aria-label="Call to action button for Download now (1.59 MB)"
+  >
+          <span class="cta__icon">
+        
+<svg role="img" title="cta-icon-download"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-download"></use>
+</svg>
+    </span>
+  
+  
+                    <span class="cta__content">Download now (1.59 MB)</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+  </section>
+
+  </div>
+  
+  <div  class="doc-section-container doc-section-container--col-2 doc-section-container--pdf doc-section-container--no-spacer doc-section-container--all-tertiary">
+    
+<section  data-anchor="#resources-white-paper" class="doc-section anchorable">
+              
+    <h3  class="heading">
+    White paper
+  </h3>
+
+    
+  <div  class="text-long" ><p>Learn about beating the commuting crunch with intermodal routing.</p></div>
+<div  class="cta-group">
+      
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+                
+
+
+  <a  target="_blank" rel="nofollow" class="cta cta--tertiary cta--download-tertiary cta--core"
+    href="/sites/default/files/2018-11/Beating_the_commuting_crunch_with_intermodal_routing_white_paper.pdf"
+    aria-label="Call to action button for Download now (146.36 KB)"
+  >
+          <span class="cta__icon">
+        
+<svg role="img" title="cta-icon-download"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-download"></use>
+</svg>
+    </span>
+  
+  
+                    <span class="cta__content">Download now (146.36 KB)</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+  </section>
+
+  </div>
+
+  </div>
+
+    </div>
+</section>
+</div>
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--bottom">
+
+
+
+
+<div  data-anchor="#related-articles" role="article" class="related-content module-theme module-theme-text-dark module-theme-background-light anchorable" >
+  
+  
+
+  <div class="related-content__container container extended-mobile-gutter">
+    <div class="related-content__top-section related-content__top-section-padding">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4">
+              <div  class="related-content__top-section-header">
+              
+    <h2  class="heading">
+    Related articles
+  </h2>
+
+  </div>
+
+          </div>
+      </div>
+          </div>
+    <div class="related-content__bottom-section row justify-content-end">
+      <div class="related-content__bottom-section-content-wrapper col-sm-12 col-xl-12">
+        <div class="related-content__bottom-section-content">
+              <div >
+      
+<div  class="field field--name-field-related-content field--type-entity-reference-revisions">
+    <div class="field__items">
+                    
+
+
+<div  data-anchor="#can-your-local-power-grid-even-handle-electric-cars" role="article" class="related-item related-item--blog_post clickable-card row anchorable">
+  <div class="related-item__left-columns zooming-image-wrapper">
+        <div  class="related-item__column related-item__column--image">
+      
+<div  class="field field--name-field-main-image field--type-image zooming-image-wrapper">
+    <div class="field__items">
+                    <img src="/sites/default/files/styles/related_content_thumbnail/public/2020-07/city-skyline-at-night.jpg?h=06ac0d8c&amp;itok=C1mV1IU9" width="164" height="112" alt="Can your local power grid even handle electric cars?" loading="lazy" />
+
+
+
+            </div>
+</div>
+
+  </div>
+
+          <div  class="related-item__column related-item__column--content">
+        
+
+<time  class="datetime"
+      >
+  1 Jul 2020
+</time>
+  
+<span  class="short-text short-text--estimated-read-time">
+      4 minute read
+  </span>
+
+  
+  
+<span  class="short-text short-text--category">
+      Automotive
+  </span>
+        
+          
+    <h3  class="heading">
+    Can your local power grid even handle electric cars?
+  </h3>
+  
+<span  class="short-text short-text--author-name">
+      by Julia Johnston
+  </span>
+
+  </div>
+
+    </div>
+  <div class="related-item__right-columns">
+          <div  class="related-item__column related-item__column--footer">
+              </div>
+      </div>
+</div>
+
+
+                
+
+
+<div  data-anchor="#can-uber-disrupt-the-transport--logistics-industry-and-empower-shippers" role="article" class="related-item related-item--blog_post clickable-card row anchorable">
+  <div class="related-item__left-columns zooming-image-wrapper">
+        <div  class="related-item__column related-item__column--image">
+      
+<div  class="field field--name-field-main-image field--type-image zooming-image-wrapper">
+    <div class="field__items">
+                    <img src="/sites/default/files/styles/related_content_thumbnail/public/2019-10/shutterstock_1014547462.jpg?h=06ac0d8c&amp;itok=S5m777yI" width="164" height="112" alt="Can Uber disrupt the Transport &amp; Logistics industry and empower shippers?" loading="lazy" />
+
+
+
+            </div>
+</div>
+
+  </div>
+
+          <div  class="related-item__column related-item__column--content">
+        
+
+<time  class="datetime"
+      >
+  8 Oct 2019
+</time>
+  
+<span  class="short-text short-text--estimated-read-time">
+      4 minute read
+  </span>
+
+  
+  
+<span  class="short-text short-text--category">
+      Fleet management
+  </span>
+        
+          
+    <h3  class="heading">
+    Can Uber disrupt the Transport &amp; Logistics industry and empower shippers?
+  </h3>
+  
+<span  class="short-text short-text--author-name">
+      by Oliver Luft
+  </span>
+
+  </div>
+
+    </div>
+  <div class="related-item__right-columns">
+          <div  class="related-item__column related-item__column--footer">
+              </div>
+      </div>
+</div>
+
+
+                
+
+
+<div  data-anchor="#is-your-city-among-the-worlds-best-for-urban-mobility" role="article" class="related-item related-item--blog_post clickable-card row anchorable">
+  <div class="related-item__left-columns zooming-image-wrapper">
+        <div  class="related-item__column related-item__column--image">
+      
+<div  class="field field--name-field-main-image field--type-image zooming-image-wrapper">
+    <div class="field__items">
+                    <img src="/sites/default/files/styles/related_content_thumbnail/public/2019-09/shutterstock_126318380.jpg?h=06ac0d8c&amp;itok=rdyF8J_I" width="164" height="112" alt="Is your city among the world&#039;s best for urban mobility?" loading="lazy" />
+
+
+
+            </div>
+</div>
+
+  </div>
+
+          <div  class="related-item__column related-item__column--content">
+        
+
+<time  class="datetime"
+      >
+  3 Sep 2019
+</time>
+  
+<span  class="short-text short-text--estimated-read-time">
+      5 minute read
+  </span>
+
+  
+  
+<span  class="short-text short-text--category">
+      Editor&#039;s picks
+  </span>
+        
+          
+    <h3  class="heading">
+    Is your city among the world&#039;s best for urban mobility?
+  </h3>
+  
+<span  class="short-text short-text--author-name">
+      by Vincent Varney
+  </span>
+
+  </div>
+
+    </div>
+  <div class="related-item__right-columns">
+          <div  class="related-item__column related-item__column--footer">
+              </div>
+      </div>
+</div>
+
+
+            </div>
+</div>
+
+  </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--bottom">
+
+
+
+
+
+<div  data-anchor="#related-products" role="article" class="flexible-cards flexible-cards--left flexible-cards--full-section flexible-cards--count-3 module-theme module-theme-text-dark module-theme-background-light anchorable" >
+  
+  
+
+  <div class="flexible-cards__container">
+    <div class="container extended-mobile-gutter">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+              <div  class="flexible-cards__header">
+      <div  class="flexible-cards__header-container">
+      <div  class="flexible-cards__header-inner-container">
+              
+    <h2  class="heading">
+    Related products
+  </h2>
+
+  </div>
+
+  </div>
+
+  </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div  class="cards">
+      <div class="cards__container  cards__full-image-background-off container extended-mobile-gutter">
+            
+          <div data-init-items="3" data-per-page="3" data-parent-id="36211" class="row field-pager-elements field-pager-elements-36211">  
+<div  data-anchor="#here-map-rendering" role="article" class="flexible-card flexible-card--product clickable-card col-12 col-md-6 col-lg-4 module-theme module-theme-text-dark anchorable">
+  
+  
+
+  <div class="flexible-card__content-wrapper">
+      <div class="flexible-card__details col-12">
+    <div class="flexible-card__icon">
+          
+      </div>
+
+    <div class="flexible-card__text">
+                        
+    <h3  class="heading">
+    HERE Map Rendering
+  </h3>
+
+    
+  <div  class="text-long" ><p>Power the performance of your fleet, deliver goods on time and improve route planning with our enterprise-grade maps.</p></div>
+
+  
+      </div>
+
+    <div class="flexible-card__cta">
+          
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+                  
+
+
+  <a  class="cta cta--tertiary cta--core cta--size-big cta--with-icon with-animation"
+    href="/platform/location-services/here-map-rendering"
+    aria-label="Call to action button for "
+  >
+          <span class="cta__icon">
+        
+<svg role="img" title="cta-icon-tertiary"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-tertiary"></use>
+</svg>
+    </span>
+  
+  
+                  
+  
+  </a>
+
+            </div>
+</div>
+      </div>
+
+  </div>
+  </div>
+</div>
+
+
+  
+<div  data-anchor="#here-traffic" role="article" class="flexible-card flexible-card--product clickable-card col-12 col-md-6 col-lg-4 module-theme module-theme-text-dark anchorable">
+  
+  
+
+  <div class="flexible-card__content-wrapper">
+      <div class="flexible-card__details col-12">
+    <div class="flexible-card__icon">
+          
+      </div>
+
+    <div class="flexible-card__text">
+                        
+    <h3  class="heading">
+    HERE Traffic
+  </h3>
+
+    
+  <div  class="text-long" ><p>Highly accurate traffic data that decreases congestion, reduces accidents and improves navigation for drivers</p></div>
+
+  
+      </div>
+
+    <div class="flexible-card__cta">
+          
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+                  
+
+
+  <a  class="cta cta--tertiary cta--core cta--size-big cta--with-icon with-animation"
+    href="/platform/location-based-services/traffic"
+    aria-label="Call to action button for "
+  >
+          <span class="cta__icon">
+        
+<svg role="img" title="cta-icon-tertiary"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-tertiary"></use>
+</svg>
+    </span>
+  
+  
+                  
+  
+  </a>
+
+            </div>
+</div>
+      </div>
+
+  </div>
+  </div>
+</div>
+
+
+  
+<div  data-anchor="#here-transit" role="article" class="flexible-card flexible-card--product clickable-card col-12 col-md-6 col-lg-4 module-theme module-theme-text-dark anchorable">
+  
+  
+
+  <div class="flexible-card__content-wrapper">
+      <div class="flexible-card__details col-12">
+    <div class="flexible-card__icon">
+          
+      </div>
+
+    <div class="flexible-card__text">
+                        
+    <h3  class="heading">
+    HERE Transit
+  </h3>
+
+    
+  <div  class="text-long" ><p>Transit context that solves complex commuting problems</p></div>
+
+  
+      </div>
+
+    <div class="flexible-card__cta">
+          
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+                  
+
+
+  <a  class="cta cta--tertiary cta--core cta--size-big cta--with-icon with-animation"
+    href="/platform/location-based-services/transit"
+    aria-label="Call to action button for "
+  >
+          <span class="cta__icon">
+        
+<svg role="img" title="cta-icon-tertiary"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#cta-icon-tertiary"></use>
+</svg>
+    </span>
+  
+  
+                  
+  
+  </a>
+
+            </div>
+</div>
+      </div>
+
+  </div>
+  </div>
+</div>
+
+
+</div>
+
+          
+      
+
+
+        </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+  
+
+<div  data-block-plugin-id="entity_block:node" class="block block--node">
+  
+    
+      <div class="organism-spacing organism-spacing--bottom">
+
+
+
+
+
+
+<div  data-anchor="#ready-to-get-started" role="article" class="lead-generation lead-generation--items-count-3 lead-generation--has-background-image lead-generation--left lead-generation--wide module-theme module-theme-text-light module-theme-background-dark anchorable" >
+  
+  
+  <div class="lead-generation__outer-wrapper  container-fluid">
+    <div class="row justify-content-center">
+      <div class="lead-generation__inner-wrapper  col-12" >
+        <div class="row">
+          <div class="lead-generation__background">
+                
+<div  class="field field--name-field-background-image field--type-image">
+    <div class="field__items">
+                  <div class="responsive-image">
+      <div class="lazy-load-animation">
+      <div class="gradient"></div>
+    </div>
+  
+            <svg  class="xl" width="1920" height="960" xmlns="http://www.w3.org/2000/svg" data-min-width="1440">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="large" width="1440" height="960" xmlns="http://www.w3.org/2000/svg" data-min-width="1024">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="medium" width="1024" height="960" xmlns="http://www.w3.org/2000/svg" data-min-width="768">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="small" width="768" height="480" xmlns="http://www.w3.org/2000/svg" data-min-width="480">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+          <svg  class="minimal" width="480" height="1440" xmlns="http://www.w3.org/2000/svg" data-min-width="479">
+  <rect width="100%" height="100%" fill="transparent"></rect>
+</svg>
+
+      
+  
+<picture  data-uuid="f23d0e84-da33-4a2a-9fe3-9623f0e60fc7" class="picture lazy-load">
+            
+<source
+   type="image/png" media="all and (min-width: 1440px)" data-label="xl" srcset="/sites/default/files/styles/lead_generation_background_xl/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=hv1WYrHZ 1x, /sites/default/files/styles/lead_generation_background_xl_retina/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=UAFdM_bj 2x" class="img"
+              alt="Map Background"
+      >
+          
+<source
+   type="image/png" media="all and (min-width: 1024px)" data-label="large" srcset="/sites/default/files/styles/lead_generation_background_large/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=EUyjNh2l 1x, /sites/default/files/styles/lead_generation_item_background_large_retina/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=_0JJqMp3 2x" class="img"
+              alt="Map Background"
+      >
+          
+<source
+   type="image/png" media="all and (min-width: 768px)" data-label="medium" srcset="/sites/default/files/styles/lead_generation_background_medium/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=P5OaLSe4 1x, /sites/default/files/styles/lead_generation_background_medium_retina/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=kl53nf3k 2x" class="img"
+              alt="Map Background"
+      >
+          
+<source
+   type="image/png" media="all and (min-width: 480px)" data-label="small" srcset="" data-srcset="/sites/default/files/styles/lead_generation_background_small_low_quality/public/2020-07/Map_Background%20Final%402x.png?itok=maCCerev 0q, /sites/default/files/styles/lead_generation_item_background_small/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=baeRtMcV 1x, /sites/default/files/styles/lead_generation_background_small_retina/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=FeGF-p2x 2x" class="img"
+              alt="Map Background"
+      >
+          
+<source
+   type="image/png" media="all and (max-width: 479px)" data-label="minimal" srcset="" data-srcset="/sites/default/files/styles/lead_generation_background_xs_low_quality/public/2020-07/Map_Background%20Final%402x.png?itok=2Pc8y0m8 0q, /sites/default/files/styles/lead_generation_background_xs/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=tBZKCdOQ 1x, /sites/default/files/styles/lead_generation_background_xs_retina/public/2020-07/Map_Background%20Final%402x.png?h=8f74817f&amp;itok=0KYZnww9 2x" class="img"
+              alt="Map Background"
+      >
+        
+<img
+   class="img"
+              alt="Map Background"
+          data-src="/sites/default/files/styles/lead_generation_background_xs/public/2020-07/Map_Background Final%402x.png?h=8f74817f&amp;itok=tBZKCdOQ"
+  >
+</picture>
+</div>
+
+            </div>
+</div>
+
+            </div>
+          <div class="lead-generation__content extended-mobile-gutter container">
+            <div class="row">
+              <div class="lead-generation__heading col-12 col-md-4 col-lg-6">
+                            
+    <h2  class="heading">
+    Ready to get started?
+  </h2>
+
+                </div>
+            </div>
+            <div class="row">
+              <div class="lead-generation__columns col-12">
+                <div class="row">
+                        
+
+
+<div  data-anchor="#ready-to-get-started-lets-talk" class="lead-generation-item module-theme module-theme-text-light module-theme-background-transparent col-12 col-md-4 anchorable"  >
+  <div class="row lead-generation-item__wrapper">
+    <div class="lead-generation-item__background">
+          
+      </div>
+    <div class="lead-generation-item__content col-12">
+                <div  class="lead-generation-item__content__fields_group">
+              
+    <h3  class="heading">
+     Let&#039;s talk 
+  </h3>
+
+    
+  <div  class="text-long" ><p>Save time and money with improved route planning.</p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  data-marketo-id="1811" data-paragraph-id="62401" data-bizible="form_id=1811&amp;form_category=contact-us&amp;cta_id=62406_contact-us&amp;detailed_source=here.local%2Fplatform%2Flocation-based-services%2Frouting-tools" class="cta cta--marketo cta--primary cta--width-small cta--core"
+    href="#"
+    aria-label="Call to action button for Contact us"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Contact us</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+  
+
+
+<div  data-anchor="#ready-to-get-started-get-started-today" class="lead-generation-item module-theme module-theme-text-light module-theme-background-transparent col-12 col-md-4 anchorable"  >
+  <div class="row lead-generation-item__wrapper">
+    <div class="lead-generation-item__background">
+          
+      </div>
+    <div class="lead-generation-item__content col-12">
+                <div  class="lead-generation-item__content__fields_group">
+              
+    <h3  class="heading">
+     Get started today 
+  </h3>
+
+    
+  <div  class="text-long" ><p>Calculate complex multi-stop and multi-modal routes.</p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_self" class="cta cta--primary cta--width-medium cta--core"
+    href="https://developer.here.com/sign-up?create=Freemium-Basic&amp;keepState=true&amp;step=account"
+    aria-label="Call to action button for Get Started today"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Get Started today</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+  
+
+
+<div  data-anchor="#ready-to-get-started-need-more-insight" class="lead-generation-item module-theme module-theme-text-light module-theme-background-transparent col-12 col-md-4 anchorable"  >
+  <div class="row lead-generation-item__wrapper">
+    <div class="lead-generation-item__background">
+          
+      </div>
+    <div class="lead-generation-item__content col-12">
+                <div  class="lead-generation-item__content__fields_group">
+              
+    <h3  class="heading">
+     Need more insight? 
+  </h3>
+
+    
+  <div  class="text-long" ><p>Learn how location services boost efficiency and lower costs.</p></div>
+
+<div class="cta-links-wrapper">
+  <div  class="cta-links">
+              
+
+
+  <a  target="_blank" class="cta cta--primary cta--width-medium cta--core"
+    href="https://go.engage.here.com/here-fleet-ebook-the-true-value-download.html?detailed_source=here.com/en/solutions/use-cases/fleet-utilization"
+    aria-label="Call to action button for Download eBook"
+  >
+      
+      <span class="cta__svg-icon">
+      
+    </span>
+  
+                    <span class="cta__content">Download eBook</span>
+            
+  
+  </a>
+
+
+        </div>
+</div>
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+        </div>
+        <div class="bottom-frame"></div>
+    </div>
+
+      </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-content">
+      
+<div  class="region region--footer">
+        
+
+<div  id="block-here-footer" data-block-plugin-id="here_footer_block" class="block block--here-footer-block">
+  
+    
+      
+
+
+
+
+<div  data-anchor="#here-footer" class="footer footer--theme-dark footer--default anchorable">
+  
+  
+
+  <div class="footer__container container extended-mobile-gutter">
+    <div class="footer__wrapper--top row">
+              <div class="footer__left col-lg-3 ">
+          
+
+<a  class="link" href="/">
+                  <h2  class="footer-heading">
+    HERE.com
+  </h2>
+            </a>
+
+
+                    </div>
+            <div class="footer__right col-lg-9 col-md-12">
+        <div class="row footer-nav">
+              
+
+      <div class="col-sm-6 col-md-4">
+      
+    
+                              
+        
+<ul  class="menu">
+                              
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/company">
+      <span class="link-content"
+                        data-title="About us"
+                  >
+      About us
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/careers">
+      <span class="link-content"
+                        data-title="Careers"
+                  >
+      Careers
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/here-offices">
+      <span class="link-content"
+                        data-title="HERE Offices"
+                  >
+      HERE Offices
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="" class="menu-link first-level" href="https://brandlive.here.com/?cid=www.here.com-footer">
+      <span class="link-content"
+                        data-title="Brand Guidelines"
+                  >
+      Brand Guidelines
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/suppliers">
+      <span class="link-content"
+                        data-title="Suppliers"
+                  >
+      Suppliers
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="" class="menu-link first-level" href="/contact">
+      <span class="link-content"
+                        data-title="Contact us"
+                  >
+      Contact us
+    </span>
+  </a>
+
+      </li>
+              </ul>
+  
+
+    </div>
+      <div class="col-sm-6 col-md-4">
+      
+    
+                              
+        
+<ul  class="menu">
+                              
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/here-statement-gdpr">
+      <span class="link-content"
+                        data-title="GDPR Statement &amp; FAQ"
+                  >
+      GDPR Statement &amp; FAQ
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="" class="menu-link first-level" href="#gdpr">
+      <span class="link-content"
+                        data-title="Consent Preferences"
+                  >
+      Consent Preferences
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_blank" class="menu-link first-level" href="https://legal.here.com/terms/serviceterms">
+      <span class="link-content"
+                        data-title="Legal"
+                  >
+      Legal
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_blank" class="menu-link first-level" href="https://legal.here.com/en-gb/security">
+      <span class="link-content"
+                        data-title="Security"
+                  >
+      Security
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_blank" class="menu-link first-level" href="https://legal.here.com/privacy/policy">
+      <span class="link-content"
+                        data-title="Privacy &amp; Cookie Policy"
+                  >
+      Privacy &amp; Cookie Policy
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/here-privacy-charter">
+      <span class="link-content"
+                        data-title="Privacy Charter"
+                  >
+      Privacy Charter
+    </span>
+  </a>
+
+      </li>
+              </ul>
+  
+
+    </div>
+      <div class="col-sm-6 col-md-4">
+      
+    
+                              
+        
+<ul  class="menu">
+                              
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/here-code-conduct">
+      <span class="link-content"
+                        data-title="Code of Conduct"
+                  >
+      Code of Conduct
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_self" class="menu-link first-level" href="/drives">
+      <span class="link-content"
+                        data-title="Drive Schedule"
+                  >
+      Drive Schedule
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_blank" class="menu-link first-level" href="https://wego.here.com/?cid=www.here.com-footer">
+      <span class="link-content"
+                        data-title="HERE WeGo Map"
+                  >
+      HERE WeGo Map
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_blank" class="menu-link first-level" href="https://mapcreator.here.com/?cid=www.here.com-footer">
+      <span class="link-content"
+                        data-title="Map Community"
+                  >
+      Map Community
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_blank" class="menu-link first-level" href="https://here.navigation.com/?utm_medium=REF&amp;utm_source=here.com&amp;utm_campaign=footer">
+      <span class="link-content"
+                        data-title="Vehicle Map Updates"
+                  >
+      Vehicle Map Updates
+    </span>
+  </a>
+
+      </li>
+                            
+                        
+
+
+  
+
+<li  class="menu-list-item">
+      
+
+<a  target="_blank" class="menu-link first-level" href="https://legal.here.com/en-gb/privacy/do-not-sell">
+      <span class="link-content"
+                        data-title="Do Not Sell My Personal Information"
+                  >
+      Do Not Sell My Personal Information
+    </span>
+  </a>
+
+      </li>
+              </ul>
+  
+
+    </div>
+  
+          </div>
+      </div>
+    </div>
+    <div class="footer__wrapper--bottom">
+      <div class="footer__bottom--left">
+        <div class="footer__bottom--logo">
+              
+
+<div  class="branding">
+      <div class="branding__logo">
+          <a href="/"><img src="/themes/custom/here_com_theme/logo-theme-dark.svg" alt="Home" /></a>
+      </div>
+      </div>
+
+          </div>
+
+        <div class="footer__bottom--links">
+              
+          </div>
+      </div>
+      <div class="footer__bottom--right">
+        <p class="footer__copyright footer__footer-item"><span class="copyright-sign">©</span> <span>2022 HERE</span></p>
+        <div class="footer__social-links footer__footer-item">
+                
+
+
+<div  class="social-media">
+  
+
+<a  target="_blank" title="Youtube" class="link-only" href="https://www.youtube.com/user/heremaps">
+          
+<svg role="img" title="youtube"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#youtube"></use>
+</svg>
+    </a>
+
+</div>
+  
+
+
+<div  class="social-media">
+  
+
+<a  target="_blank" title="360" class="link-only" href="https://360.here.com/">
+          
+<svg role="img" title="360"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#360"></use>
+</svg>
+    </a>
+
+</div>
+  
+
+
+<div  class="social-media">
+  
+
+<a  target="_blank" title="Instagram" class="link-only" href="https://www.instagram.com/here/">
+          
+<svg role="img" title="instagram"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#instagram"></use>
+</svg>
+    </a>
+
+</div>
+  
+
+
+<div  class="social-media">
+  
+
+<a  target="_blank" title="Twitter" class="link-only" href="https://twitter.com/HERE">
+          
+<svg role="img" title="twitter"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#twitter"></use>
+</svg>
+    </a>
+
+</div>
+  
+
+
+<div  class="social-media">
+  
+
+<a  target="_blank" title="Linkedin" class="link-only" href="https://www.linkedin.com/company/here/">
+          
+<svg role="img" title="linkedin"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#linkedin"></use>
+</svg>
+    </a>
+
+</div>
+  
+
+
+<div  class="social-media">
+  
+
+<a  target="_blank" title="Facebook" class="link-only" href="https://www.facebook.com/here">
+          
+<svg role="img" title="facebook"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#facebook"></use>
+</svg>
+    </a>
+
+</div>
+
+          </div>
+                  <div class="footer__language_switcher footer__footer-item">
+                
+<div  class="language-switcher">
+  <div class="language-switcher__current-language">
+    
+<a href="/platform/location-based-services/routing-tools"  class="language-switcher-link language-en">
+  Global - English
+</a>
+
+
+      
+<svg role="img" title="chevron-down"  class="icon">
+  <use xlink:href="/themes/custom/here_com_theme/dist/img/sprite/sprite.svg?itok=6e9085d3-a991-4094-850f-1e4b29e5d8b0#chevron-down"></use>
+</svg>
+  </div>
+
+  <div class="language-switcher__dropdown">
+          
+<a href="/jp/platform/location-based-services/routing-tools"  class="language-switcher-link language-ja">
+  日本-日本語
+</a>
+
+      </div>
+</div>
+
+            </div>
+              </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+    </div>
+  </footer>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/36221","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"here_marketo_munchkin":{"track":true,"key":"057-IPJ-682","initParams":[],"library":"\/\/munchkin.marketo.net\/munchkin.js"},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"id":"","classes":"","element":"div","show_label":false,"label_element":"h3","attributes":"","effect":"none","speed":"fast","label_element_classes":"","label":"Title"}},"heading_title_length_based_bootstrap_wrapper":{"mode":"hero_banner_secondary","context":"view","settings":{"element":"div","show_label":"0","label_element":"h3","label_element_classes":"","attributes":"","effect":"none","speed":"fast","id":"","classes":"col-12","wide_class":"col-lg-10","narrow_class":"col-lg-6","characters_limit":"84","override_field":"field_heading_title_width"}}},"cta_default_theme":"core","marketo_form_field":{"munchkinId":"057-IPJ-682","instanceHost":"\/\/app-ab30.marketo.com","marketoForms":{"1811":{"62401":{"formId":"1811","formTheme":"theme-light","formCategory":"contact-us","formClasses":"marketo-gradient-theme-core module-theme module-theme-text-dark module-theme-background-light","formInlineStyles":[],"formImage":"","formDesc":"\u003Cp\u003ELearn more about how our services can help you:\u003C\/p\u003E\r\n\r\n\u003Cul\u003E\r\n\t\u003Cli\u003EPlan routes that keep your fleet moving\u003C\/li\u003E\r\n\t\u003Cli\u003ESave costs and minimize delays by taking the fastest, most efficient route\u003C\/li\u003E\r\n\t\u003Cli\u003ECreate complex multi-modal and intermodal journeys in 108 languages\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\r\n\u003Ch6\u003E*Required field. We will use your information according to our \u003Ca href=\u0022https:\/\/legal.here.com\/privacy\/policy\/gb\/\u0022 target=\u0022_blank\u0022\u003Eprivacy policy\u003C\/a\u003E.\u003C\/h6\u003E\r\n","formTitle":"How can we help your business?","formTitleHeading":"1","successHTML":"\n\u003Cdiv  data-anchor=\u0022#ready-to-get-started-lets-talk-how-can-we-help-your-business\u0022 class=\u0022marketo-success anchorable\u0022 \u003E\n\n      \u003Cdiv class=\u0022container\u0022\u003E\n      \u003Cdiv class=\u0022row\u0022\u003E\n        \u003Cdiv class=\u0022marketo-success__message text-align-center col-sm-12 offset-md-3 col-md-6\u0022\u003E\n          \u003Cspan class=\u0022marketo-success__icon\u0022\u003E\u003C\/span\u003E\n                      \n    \u003Ch3  class=\u0022heading\u0022\u003E\n    Thank you\n  \u003C\/h3\u003E\n\n  \n              \n    \n  \u003Cdiv  class=\u0022text-long\u0022 \u003E\u003Cp\u003EWe have received your inquiry and will be in contact soon.\u003C\/p\u003E\u003C\/div\u003E\n\n  \n              \n          \u003C\/div\u003E\n      \u003C\/div\u003E\n    \u003C\/div\u003E\n  \n  \u003Cdiv class=\u0022marketo-success__bottom\u0022\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n","values":[],"formGradientTheme":"core"},"62271":{"formId":"1811","formTheme":"theme-light","formCategory":"contact-us","formClasses":"marketo-gradient-theme-core module-theme module-theme-text-dark module-theme-background-light","formInlineStyles":[],"formImage":"","formDesc":"\u003Cp\u003ELearn more about how our services can help you:\u003C\/p\u003E\r\n\r\n\u003Cul\u003E\r\n\t\u003Cli\u003EPlan routes that keep your fleet moving\u003C\/li\u003E\r\n\t\u003Cli\u003ESave costs and minimize delays by taking the fastest, most efficient route\u003C\/li\u003E\r\n\t\u003Cli\u003ECreate complex multi-modal and intermodal journeys in 108 languages\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\r\n\u003Ch6\u003E*Required field. We will use your information according to our \u003Ca href=\u0022https:\/\/legal.here.com\/privacy\/policy\/gb\/\u0022 target=\u0022_blank\u0022\u003Eprivacy policy\u003C\/a\u003E.\u003C\/h6\u003E\r\n","formTitle":"How can we help your business?","formTitleHeading":"1","successHTML":"\n\u003Cdiv  data-anchor=\u0022#ready-to-get-started-lets-talk-how-can-we-help-your-business\u0022 class=\u0022marketo-success anchorable\u0022 \u003E\n\n      \u003Cdiv class=\u0022container\u0022\u003E\n      \u003Cdiv class=\u0022row\u0022\u003E\n        \u003Cdiv class=\u0022marketo-success__message text-align-center col-sm-12 offset-md-3 col-md-6\u0022\u003E\n          \u003Cspan class=\u0022marketo-success__icon\u0022\u003E\u003C\/span\u003E\n                      \n    \u003Ch3  class=\u0022heading\u0022\u003E\n    Thank you\n  \u003C\/h3\u003E\n\n  \n              \n    \n  \u003Cdiv  class=\u0022text-long\u0022 \u003E\u003Cp\u003EWe have received your inquiry and will be in contact soon.\u003C\/p\u003E\u003C\/div\u003E\n\n  \n              \n          \u003C\/div\u003E\n      \u003C\/div\u003E\n    \u003C\/div\u003E\n  \n  \u003Cdiv class=\u0022marketo-success__bottom\u0022\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n","values":[],"formGradientTheme":"core"},"62211":{"formId":"1811","formTheme":"theme-light","formCategory":"contact-us","formClasses":"marketo-gradient-theme-core module-theme module-theme-text-dark module-theme-background-light","formInlineStyles":[],"formImage":"","formDesc":"\u003Cp\u003ELearn more about how our services can help you:\u003C\/p\u003E\r\n\r\n\u003Cul\u003E\r\n\t\u003Cli\u003EPlan routes that keep your fleet moving\u003C\/li\u003E\r\n\t\u003Cli\u003ESave costs and minimize delays by taking the fastest, most efficient route\u003C\/li\u003E\r\n\t\u003Cli\u003ECreate complex multi-modal and intermodal journeys in 108 languages\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\r\n\u003Ch6\u003E*Required field. We will use your information according to our \u003Ca href=\u0022https:\/\/legal.here.com\/privacy\/policy\/gb\/\u0022 target=\u0022_blank\u0022\u003Eprivacy policy\u003C\/a\u003E.\u003C\/h6\u003E\r\n","formTitle":"Let\u0027s talk","formTitleHeading":"3","successHTML":"\n\u003Cdiv  data-anchor=\u0022#here-routing-lets-talk\u0022 class=\u0022marketo-success anchorable\u0022 \u003E\n\n      \u003Cdiv class=\u0022container\u0022\u003E\n      \u003Cdiv class=\u0022row\u0022\u003E\n        \u003Cdiv class=\u0022marketo-success__message text-align-center col-sm-12 offset-md-3 col-md-6\u0022\u003E\n          \u003Cspan class=\u0022marketo-success__icon\u0022\u003E\u003C\/span\u003E\n                      \n    \u003Ch3  class=\u0022heading\u0022\u003E\n    Thank-you\n  \u003C\/h3\u003E\n\n  \n              \n    \n  \u003Cdiv  class=\u0022text-long\u0022 \u003E\u003Cp\u003EWe have received your enquiry and will be in contact soon.\u003C\/p\u003E\u003C\/div\u003E\n\n  \n              \n          \u003C\/div\u003E\n      \u003C\/div\u003E\n    \u003C\/div\u003E\n  \n  \u003Cdiv class=\u0022marketo-success__bottom\u0022\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n","values":[],"formGradientTheme":"core"}},"2227":{"95221":{"formId":"2227","formTheme":"theme-light","formCategory":"contact-us","formClasses":"marketo-gradient-theme-core module-theme module-theme-text-dark module-theme-background-light","formInlineStyles":[],"formImage":"","formDesc":"\u003Cp\u003EOur platform provides:\u003C\/p\u003E\r\n\r\n\u003Cul\u003E\r\n\t\u003Cli\u003EAn integrated suite of solutions for connected vehicles\u003C\/li\u003E\r\n\t\u003Cli\u003EThe most trusted mapping content\u003C\/li\u003E\r\n\t\u003Cli\u003EA marketplace for data to solve complex location-based business problems\u003C\/li\u003E\r\n\u003C\/ul\u003E\r\n\r\n\u003Ch6\u003E*Required field.\u0026nbsp;We will use your information according to our\u0026nbsp;\u003Ca href=\u0022https:\/\/legal.here.com\/privacy\/policy\/gb\/\u0022 target=\u0022_blank\u0022\u003Eprivacy policy\u003C\/a\u003E.\u003C\/h6\u003E\r\n","formTitle":"Ways we can help your business","formTitleHeading":"1","successHTML":"\n\u003Cdiv  data-anchor=\u0022#ways-we-can-help-your-business\u0022 class=\u0022marketo-success anchorable\u0022 \u003E\n\n      \u003Cdiv class=\u0022container\u0022\u003E\n      \u003Cdiv class=\u0022row\u0022\u003E\n        \u003Cdiv class=\u0022marketo-success__message text-align-center col-sm-12 offset-md-3 col-md-6\u0022\u003E\n          \u003Cspan class=\u0022marketo-success__icon\u0022\u003E\u003C\/span\u003E\n                      \n    \u003Ch3  class=\u0022heading\u0022\u003E\n    Thank you\n  \u003C\/h3\u003E\n\n  \n              \n    \n  \u003Cdiv  class=\u0022text-long\u0022 \u003E\u003Cp\u003E\u003Cstrong\u003EWe have received your enquiry and will be in contact soon.\u003C\/strong\u003E\u003C\/p\u003E\n\n\u003Cp\u003EDid you know HERE was once again\u00a0ranked #1 in the 2020 Omdia Location Platform Index report?\u003C\/p\u003E\u003C\/div\u003E\n\n  \n              \n\u003Cdiv class=\u0022cta-links-wrapper\u0022\u003E\n  \u003Cdiv  class=\u0022cta-links\u0022\u003E\n              \n\n\n  \u003Ca  target=\u0022\u0022 class=\u0022cta cta--primary cta--width-large cta--core\u0022\n    href=\u0022https:\/\/www.here.com\/omdia-2020-platform-report\u0022\n    aria-label=\u0022Call to action button for Download the report\u0022\n  \u003E\n      \n      \u003Cspan class=\u0022cta__svg-icon\u0022\u003E\n      \n    \u003C\/span\u003E\n  \n                    \u003Cspan class=\u0022cta__content\u0022\u003EDownload the report\u003C\/span\u003E\n            \n  \n  \u003C\/a\u003E\n\n\n          \n\n\n  \u003Ca  target=\u0022\u0022 class=\u0022cta cta--primary cta--width-large cta--core\u0022\n    href=\u0022https:\/\/www.here.com\u0022\n    aria-label=\u0022Call to action button for Return home\u0022\n  \u003E\n      \n      \u003Cspan class=\u0022cta__svg-icon\u0022\u003E\n      \n    \u003C\/span\u003E\n  \n                    \u003Cspan class=\u0022cta__content\u0022\u003EReturn home\u003C\/span\u003E\n            \n  \n  \u003C\/a\u003E\n\n\n        \u003C\/div\u003E\n\u003C\/div\u003E\n\n          \u003C\/div\u003E\n      \u003C\/div\u003E\n    \u003C\/div\u003E\n  \n  \u003Cdiv class=\u0022marketo-success__bottom\u0022\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n","values":[],"formGradientTheme":"core"}}}},"lazyload":{"breakpoints":[1440,1024,768,480,479]},"ajax":[],"user":{"uid":0,"permissionsHash":"37ea07750819e0aceb4a9aca75cb3d2130b389e1bb7946d9b4a3535461ef6e28"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.6.0"></script>
+<script src="/themes/custom/here_base_theme/js/jQuery_passive_listeners_fix.js?r5hrtp"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=9.2.10"></script>
+<script src="/core/misc/drupal.js?v=9.2.10"></script>
+<script src="/core/misc/drupal.init.js?v=9.2.10"></script>
+<script src="/themes/custom/here_base_theme/dist/js/hero-banner.min.js?r5hrtp"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/modules/contrib/addtoany/js/addtoany.js?v=9.2.10"></script>
+<script src="/profiles/custom/here_base/modules/custom/here_marketo/js/munchkin.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/admin-links.min.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/js/ajax_instances.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/js/outline_detect.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/helpers.min.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/main-navigation.min.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/animation.min.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/vendor/svgxuse/svgxuse.min.js?r5hrtp" defer></script>
+<script src="/profiles/custom/here_base/modules/custom/here_lazy_load/js/here_lazy_load.js?r5hrtp" defer></script>
+<script src="/profiles/custom/here_base/modules/custom/here_anchors/js/scroll.js?r5hrtp"></script>
+<script src="http://app-ab30.marketo.com/js/forms2/js/forms2.min.js" defer="true"></script>
+<script src="/profiles/custom/here_base/modules/custom/here_cta_marketo/js/marketo-popup.js?r5hrtp" defer></script>
+<script src="/themes/custom/here_base_theme/dist/js/onecol-gradients.min.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/editorial-cards.min.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/gradient-offset-animation.min.js?r5hrtp"></script>
+<script src="/libraries/colorbox/jquery.colorbox-min.js?r5hrtp" defer="true"></script>
+<script src="https://play.vidyard.com/embed/v4.js"></script>
+<script src="https://youtube.com/iframe_api"></script>
+<script src="/profiles/custom/here_base/modules/custom/here_rendered_video/js/cta-overlay-video.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/announcement-ribbon.min.js?r5hrtp"></script>
+<script src="/profiles/custom/here_base/modules/custom/here_language/js/language_switcher.js?r5hrtp"></script>
+<script src="/themes/custom/here_base_theme/dist/js/footer.min.js?r5hrtp"></script>
+<script src="/core/misc/debounce.js?v=9.2.10"></script>
+<script src="/profiles/custom/here_base/modules/custom/here_navigation/js/desktop-navigation-async-load.js?r5hrtp" defer></script>
+
+  </body>
+
+<!-- Mirrored from here.local/platform/location-based-services/routing-tools by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 11:52:32 GMT -->
+</html>

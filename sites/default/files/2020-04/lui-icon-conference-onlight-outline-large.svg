@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="lui-icon-conference-ondark-outline-large"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48"
+	 enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+	<g id="lui-icon-conference-ondark-outline-large-bounding-box" opacity="0">
+		<path fill="#0F1621" d="M47,1v46H1V1H47 M48,0H0v48h48V0L48,0z"/>
+	</g>
+	
+		<line fill="none" stroke="#00B6B2" stroke-width="2.0911" stroke-miterlimit="10" x1="32.1556" y1="34.9825" x2="16" y2="34.9825"/>
+	<path fill="none" stroke="#0F1621" stroke-width="2.0911" stroke-miterlimit="10" d="M29,32v-8.1327
+		C29,22.2838,27.6224,21,25.9231,21h-3.8462C20.3776,21,19,22.2838,19,23.8673V32"/>
+	<path fill="none" stroke="#0F1621" stroke-width="2.0911" stroke-miterlimit="10" d="M21.7708,12.985v2.0301
+		c0,1.0946,1.0007,1.985,2.2297,1.985s2.2287-0.8904,2.2287-1.985V12.985c0-1.0946-0.9997-1.985-2.2287-1.985
+		S21.7708,11.8904,21.7708,12.985z"/>
+	<path fill="none" stroke="#0F1621" stroke-width="2.1008" stroke-miterlimit="10" d="M37.25,14.985v2.0301
+		c0,1.0946,1.01,1.985,2.2505,1.985c1.2405,0,2.2495-0.8904,2.2495-1.985V14.985c0-1.0946-1.009-1.985-2.2495-1.985
+		C38.26,13,37.25,13.8904,37.25,14.985z"/>
+	<path fill="none" stroke="#0F1621" stroke-width="2.0911" stroke-miterlimit="10" d="M6.2708,14.985v2.0301
+		c0,1.0946,1.0007,1.985,2.2297,1.985s2.2287-0.8904,2.2287-1.985V14.985c0-1.0946-0.9997-1.985-2.2287-1.985
+		S6.2708,13.8904,6.2708,14.985z"/>
+	<path fill="none" stroke="#0F1621" stroke-width="2" stroke-miterlimit="10" d="M44,36.0083V25.9367
+		c0-1.6173-1.3521-2.9284-3.0201-2.9284h-2.9599C36.3521,23.0083,35,24.3827,35,26v10.0083"/>
+	<rect opacity="0" fill="none" width="48" height="48"/>
+	<path fill="none" stroke="#0F1621" stroke-width="2.0911" stroke-miterlimit="10" d="M13,36.0083V25.9367
+		c0-1.6173-1.3521-2.9284-3.0201-2.9284H7.0201C5.3521,23.0083,4,24.3827,4,26v10.0083"/>
+</g>
+</svg>

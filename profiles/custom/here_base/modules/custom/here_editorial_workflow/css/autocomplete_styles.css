@@ -1,0 +1,8 @@
+/* Styles for autocomplete. */
+
+/* Enable scroll on overflow for ui-autocomplete field */
+/* Set fixed max-height to be able to accommodate max of 10 results */
+.ui-autocomplete {
+  max-height: 204px;
+  overflow-y: auto;
+}

@@ -1,0 +1,2 @@
+.branding{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.branding__logo{line-height:0}.branding__label{font-size:14px;font-weight:500;line-height:1.15;position:relative;margin-left:24px}.branding__label::before{content:'';position:absolute;left:-12px;top:-50%;width:1px;height:30px;background:var(--gray-5)}.branding__label a{color:var(--gray-2)}[class*="--theme-dark"] .branding__label a{color:var(--white)}
+/*# sourceMappingURL=branding.css.map */

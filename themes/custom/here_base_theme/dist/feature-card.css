@@ -1,0 +1,2 @@
+.feature-card{position:relative;display:inline-block}.feature-card .img{position:relative;z-index:1}.feature-card .info{position:absolute;top:50px;left:0;z-index:2;width:100%;text-align:center}.feature-card .info .date{font-weight:400}.feature-card .title{position:absolute;top:50%;left:50%;z-index:2;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:50%;text-align:center}
+/*# sourceMappingURL=feature-card.css.map */

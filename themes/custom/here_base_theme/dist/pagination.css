@@ -1,0 +1,2 @@
+.pagination__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0;padding:0}.pagination__list-item{list-style:none;padding-left:9px;padding-right:9px}.pagination__list-item.current a{font-weight:500;pointer-events:none;color:var(--gray-2)}.pagination__list-item:first-of-type{padding-left:0}.pagination__list-item:last-of-type{padding-right:0}
+/*# sourceMappingURL=pagination.css.map */
